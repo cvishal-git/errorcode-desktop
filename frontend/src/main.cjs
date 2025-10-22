@@ -13,7 +13,7 @@ function getAppRoot() {
   if (isDev) {
     return path.join(__dirname, '../..');
   }
-  
+
   // Production: exe is in resources/app.asar or resources/app
   // We want to go to the directory containing the .exe
   return path.dirname(app.getPath('exe'));
@@ -21,12 +21,17 @@ function getAppRoot() {
 
 function startPython() {
   const appRoot = getAppRoot();
-  
+
   let pythonPath, pythonArgs, cwd;
-  
+
   if (isDev) {
-    // Development mode: use system Python
-    pythonPath = process.platform === 'win32' ? 'python' : 'python3';
+    // Development mode: use virtual environment Python
+    const venvPython = path.join(__dirname, '../../backend/venv/bin/python');
+    pythonPath = fs.existsSync(venvPython)
+      ? venvPython
+      : process.platform === 'win32'
+      ? 'python'
+      : 'python3';
     const scriptPath = path.join(__dirname, '../../backend/server.py');
     pythonArgs = [scriptPath, '--port', '8000', '--host', '127.0.0.1'];
     cwd = path.join(__dirname, '../..');
@@ -49,13 +54,13 @@ function startPython() {
     console.error('Make sure backend.exe is in resources/backend/');
   }
 
-  pythonProcess = spawn(pythonPath, pythonArgs, { 
+  pythonProcess = spawn(pythonPath, pythonArgs, {
     stdio: 'inherit',
     cwd: cwd,
     env: {
       ...process.env,
-      PYTHONUNBUFFERED: '1'
-    }
+      PYTHONUNBUFFERED: '1',
+    },
   });
 
   pythonProcess.on('error', (err) => {

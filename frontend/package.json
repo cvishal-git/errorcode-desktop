@@ -9,7 +9,7 @@
     "url": "https://github.com/vishalchaudhary/errorcode-desktop.git"
   },
   "private": true,
-  "main": "src/main.js",
+  "main": "src/main.cjs",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -57,7 +57,7 @@
     },
     "files": [
       "dist/**/*",
-      "src/main.js",
+      "src/main.cjs",
       "package.json"
     ],
     "extraResources": [
@@ -89,7 +89,7 @@
       "warningsAsErrors": false
     },
     "extraMetadata": {
-      "main": "src/main.js"
+      "main": "src/main.cjs"
     }
   }
 }
