@@ -1,0 +1,44 @@
+{
+  "code": "BMMJ09",
+  "category": "BMMJ",
+  "title": "BMMJ09",
+  "alarm_message": "Print Mark Missing",
+  "description": "This alarm occurs if print mark is not sensed by PRC sensor for 5 consecutive cycles.",
+  "reasons_remedies": [
+    "The eye mark is shifted left or right while the machine is running.",
+    "Correct film and foil path to sense the eye mark by the scanner on every cycle.",
+    "Teach PRC scanner.",
+    "? Refer Chapter \"Maintenance\" > Section \"Setting the Print Registration Control Scanner\"",
+    "The distance between the two eye marks on the lidding foil is not as per the format drawing.",
+    "Check the distance between two eye marks on the lidding foil",
+    "Set the correct distance between two eye marks on the lidding foil if needed.",
+    "The entered PRC value is not correct for the appropriate PRC correction.",
+    "Enter accurate PRC values to maintain correct PRC correction."
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/PRCLocation.png",
+      "type": "png",
+      "caption": "PRC Sensor Location",
+      "tags": [
+        "prc",
+        "sensor",
+        "location",
+        "prclocation"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/PRCSensor.jpg",
+      "type": "jpg",
+      "caption": "PRC Sensor Location",
+      "tags": [
+        "prc",
+        "sensor",
+        "location",
+        "prcsensor"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMMJ09\nError Code 09\nCategory: BMMJ\nTitle: BMMJ09\nAlarm Message: Print Mark Missing\nDescription: This alarm occurs if print mark is not sensed by PRC sensor for 5 consecutive cycles.\nReason & Remedy:\n1. The eye mark is shifted left or right while the machine is running.\n2. Correct film and foil path to sense the eye mark by the scanner on every cycle.\n3. Teach PRC scanner.\n4. ? Refer Chapter \"Maintenance\" > Section \"Setting the Print Registration Control Scanner\"\n5. The distance between the two eye marks on the lidding foil is not as per the format drawing.\n6. Check the distance between two eye marks on the lidding foil\n7. Set the correct distance between two eye marks on the lidding foil if needed.\n8. The entered PRC value is not correct for the appropriate PRC correction.\n9. Enter accurate PRC values to maintain correct PRC correction.\nVisual References:\n- PRC Sensor Location\n- PRC Sensor Location",
+  "notes": ""
+}

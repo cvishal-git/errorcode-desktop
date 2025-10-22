@@ -1,0 +1,77 @@
+{
+  "code": "BMCR03",
+  "category": "BMCR",
+  "title": "BMCR03",
+  "alarm_message": "Heater MCB (5,6,7,8,9,22) / MPCB Trip",
+  "description": "Heater or Vacuum Pump MCB/MPCB tripped in control panle. MCB/MPCB protaction signal not received in PLC. Check input X22 on Input Card-1.",
+  "reasons_remedies": [
+    "The MCB or MPCB switches off.",
+    "Check loose wire connection in the control panel MCB or MPCB.",
+    "Switch on tripped MCB or MPCB.",
+    "(Heater MCB)",
+    "MCB or MPCB tripped after turning it on.",
+    "Check the heater of the sealing unit, heating unit, perforation unit and Powerpack unit wiring.(refer the wiring diagram)",
+    "<< Toogle up",
+    "(MCB tripped)",
+    "(MCB Switched On)",
+    "(MPCB for Heater)",
+    "No MCB or MPCB tripped in panle.",
+    "Check the faulty MCB or MPCB"
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/HeaterMCB2.JPG",
+      "type": "jpg",
+      "caption": "MCB switch",
+      "tags": [
+        "mcb",
+        "switch",
+        "heatermcb"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/ThumbUp.png",
+      "type": "png",
+      "caption": "Toggle up",
+      "tags": [
+        "toggle",
+        "thumbup"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/HeaterMCB1.JPG",
+      "type": "jpg",
+      "caption": "MCB switch",
+      "tags": [
+        "mcb",
+        "switch",
+        "heatermcb"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/MPCB2.JPG",
+      "type": "jpg",
+      "caption": "MCB switch",
+      "tags": [
+        "mcb",
+        "switch",
+        "mpcb"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/HeaterElectrical.JPG",
+      "type": "jpg",
+      "caption": "Heater Supply Wiring (Electrical Drawing Page No:16)",
+      "tags": [
+        "heater",
+        "supply",
+        "wiring",
+        "electrical",
+        "drawing",
+        "heaterelectrical"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMCR03\nError Code 03\nCategory: BMCR\nTitle: BMCR03\nAlarm Message: Heater MCB (5,6,7,8,9,22) / MPCB Trip\nDescription: Heater or Vacuum Pump MCB/MPCB tripped in control panle. MCB/MPCB protaction signal not received in PLC. Check input X22 on Input Card-1.\nReason & Remedy:\n1. The MCB or MPCB switches off.\n2. Check loose wire connection in the control panel MCB or MPCB.\n3. Switch on tripped MCB or MPCB.\n4. (Heater MCB)\n5. MCB or MPCB tripped after turning it on.\n6. Check the heater of the sealing unit, heating unit, perforation unit and Powerpack unit wiring.(refer the wiring diagram)\n7. << Toogle up\n8. (MCB tripped)\n9. (MCB Switched On)\n10. (MPCB for Heater)\n11. No MCB or MPCB tripped in panle.\n12. Check the faulty MCB or MPCB\nVisual References:\n- MCB switch\n- Toggle up\n- MCB switch\n- MCB switch\n- Heater Supply Wiring (Electrical Drawing Page No:16)",
+  "notes": ""
+}

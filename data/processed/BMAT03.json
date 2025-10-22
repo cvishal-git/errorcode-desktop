@@ -1,0 +1,26 @@
+{
+  "code": "BMAT03",
+  "category": "BMAT",
+  "title": "BMAT03",
+  "alarm_message": "Lidding Foil Pin Hole not Ready",
+  "description": "",
+  "reasons_remedies": [
+    "Lidding Foil Pin Hole is not Ready/powered on. a. Check if the Lidding Foil Pin Hole system is ready and powered on..",
+    "The ready signal is not coming from the Lidding foil pin hole system. a. Check the signal coming from the pin hole system and take corrective action."
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/LidPinHoleLoc.png",
+      "type": "png",
+      "caption": "Camera System Location",
+      "tags": [
+        "camera",
+        "system",
+        "location",
+        "lidpinholeloc"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMAT03\nError Code 03\nCategory: BMAT\nTitle: BMAT03\nAlarm Message: Lidding Foil Pin Hole not Ready\nReason & Remedy:\n1. Lidding Foil Pin Hole is not Ready/powered on. a. Check if the Lidding Foil Pin Hole system is ready and powered on..\n2. The ready signal is not coming from the Lidding foil pin hole system. a. Check the signal coming from the pin hole system and take corrective action.\nVisual References:\n- Camera System Location",
+  "notes": ""
+}

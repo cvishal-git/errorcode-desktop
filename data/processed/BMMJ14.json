@@ -1,0 +1,29 @@
+{
+  "code": "BMMJ14",
+  "category": "BMMJ",
+  "title": "BMMJ14",
+  "alarm_message": "Sealing Side Lock (L) SW 4 Fail",
+  "description": "This alarm occurs when machine is started and sealing station side lock cylinder(Left) dose not activate and lock. Side lock cylinder(Left) may not activate if cylinder failed to work or if the reed switch position is disturbed or not functioning. Reason & Remedy",
+  "reasons_remedies": [
+    "Side lock cylinder(Left) falied to activate when machine was started.",
+    "Check if the sealing side lock cylinder is completly activated and nothing is blocking it.",
+    "Check the pneumatic air pressre. Minimum 4 bar is reqired.",
+    "Side lock cylinder(Left) activated but reed switch not sensing the piston.",
+    "Check and adjust the position of reed switch 4.",
+    "Check if reed switch is tightned properly and not moving while machine is running.",
+    "Reed switch not sensing.",
+    "Check if reed switch is working properly by moving it up and down on clyinder. If reed switch is not functing check the wiring for any loose connection or replace the seed switch."
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/SealSideLeft.JPG",
+      "type": "jpg",
+      "caption": "",
+      "tags": [
+        "sealsideleft"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMMJ14\nError Code 14\nCategory: BMMJ\nTitle: BMMJ14\nAlarm Message: Sealing Side Lock (L) SW 4 Fail\nDescription: This alarm occurs when machine is started and sealing station side lock cylinder(Left) dose not activate and lock. Side lock cylinder(Left) may not activate if cylinder failed to work or if the reed switch position is disturbed or not functioning. Reason & Remedy\nReason & Remedy:\n1. Side lock cylinder(Left) falied to activate when machine was started.\n2. Check if the sealing side lock cylinder is completly activated and nothing is blocking it.\n3. Check the pneumatic air pressre. Minimum 4 bar is reqired.\n4. Side lock cylinder(Left) activated but reed switch not sensing the piston.\n5. Check and adjust the position of reed switch 4.\n6. Check if reed switch is tightned properly and not moving while machine is running.\n7. Reed switch not sensing.\n8. Check if reed switch is working properly by moving it up and down on clyinder. If reed switch is not functing check the wiring for any loose connection or replace the seed switch.\nVisual References:",
+  "notes": ""
+}

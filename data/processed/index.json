@@ -1,0 +1,434 @@
+[
+  {
+    "code": "BMMJ18",
+    "category": "BMMJ",
+    "title": "BMMJ18",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMMJ18.json"
+  },
+  {
+    "code": "ATTACHMENTALARM",
+    "category": "ATTACHMENTALARM",
+    "title": "Attachment Alarms",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/ATTACHMENTALARM.json"
+  },
+  {
+    "code": "BMMJ08",
+    "category": "BMMJ",
+    "title": "BMMJ08",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMMJ08.json"
+  },
+  {
+    "code": "BMMJ09",
+    "category": "BMMJ",
+    "title": "BMMJ09",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMMJ09.json"
+  },
+  {
+    "code": "BMCR21",
+    "category": "BMCR",
+    "title": "BMCR21",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMCR21.json"
+  },
+  {
+    "code": "BMCR09",
+    "category": "BMCR",
+    "title": "BMCR09",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMCR09.json"
+  },
+  {
+    "code": "ALARMTROBLESHOOTING",
+    "category": "ALARMTROBLESHOOTING",
+    "title": "Alarm Troubleshoting",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/ALARMTROBLESHOOTING.json"
+  },
+  {
+    "code": "BMCR08",
+    "category": "BMCR",
+    "title": "BMCR08",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMCR08.json"
+  },
+  {
+    "code": "BMCR20",
+    "category": "BMCR",
+    "title": "BMCR20",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMCR20.json"
+  },
+  {
+    "code": "CRITICALALARM",
+    "category": "CRITICALALARM",
+    "title": "Critical Alarms",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/CRITICALALARM.json"
+  },
+  {
+    "code": "BMCR22",
+    "category": "BMCR",
+    "title": "BMCR22",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMCR22.json"
+  },
+  {
+    "code": "BMAT09",
+    "category": "BMAT",
+    "title": "BMAT09",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMAT09.json"
+  },
+  {
+    "code": "BMAT08",
+    "category": "BMAT",
+    "title": "BMAT08",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMAT08.json"
+  },
+  {
+    "code": "BMCR23",
+    "category": "BMCR",
+    "title": "BMCR23",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMCR23.json"
+  },
+  {
+    "code": "BMCR18",
+    "category": "BMCR",
+    "title": "BMCR18",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMCR18.json"
+  },
+  {
+    "code": "BMCR24",
+    "category": "BMCR",
+    "title": "BMCR24",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMCR24.json"
+  },
+  {
+    "code": "BMCR25",
+    "category": "BMCR",
+    "title": "BMCR25",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMCR25.json"
+  },
+  {
+    "code": "BMCR19",
+    "category": "BMCR",
+    "title": "BMCR19",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMCR19.json"
+  },
+  {
+    "code": "BMAT03",
+    "category": "BMAT",
+    "title": "BMAT03",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMAT03.json"
+  },
+  {
+    "code": "BMCR14",
+    "category": "BMCR",
+    "title": "BMCR14",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMCR14.json"
+  },
+  {
+    "code": "BMMI05",
+    "category": "BMMI",
+    "title": "BMMI05",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMMI05.json"
+  },
+  {
+    "code": "BMMI04",
+    "category": "BMMI",
+    "title": "BMMI04",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMMI04.json"
+  },
+  {
+    "code": "BMCR01",
+    "category": "BMCR",
+    "title": "BMCR01",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMCR01.json"
+  },
+  {
+    "code": "BMCR15",
+    "category": "BMCR",
+    "title": "BMCR15",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMCR15.json"
+  },
+  {
+    "code": "BMAT02",
+    "category": "BMAT",
+    "title": "BMAT02",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMAT02.json"
+  },
+  {
+    "code": "BMCR03",
+    "category": "BMCR",
+    "title": "BMCR03",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMCR03.json"
+  },
+  {
+    "code": "BMCR17",
+    "category": "BMCR",
+    "title": "BMCR17",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMCR17.json"
+  },
+  {
+    "code": "BMMI06",
+    "category": "BMMI",
+    "title": "BMMI06",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMMI06.json"
+  },
+  {
+    "code": "BMMI07",
+    "category": "BMMI",
+    "title": "BMMI07",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMMI07.json"
+  },
+  {
+    "code": "BMCR16",
+    "category": "BMCR",
+    "title": "BMCR16",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMCR16.json"
+  },
+  {
+    "code": "BMAT01",
+    "category": "BMAT",
+    "title": "BMAT01",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMAT01.json"
+  },
+  {
+    "code": "BMCR02",
+    "category": "BMCR",
+    "title": "BMCR02",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMCR02.json"
+  },
+  {
+    "code": "BMCR06",
+    "category": "BMCR",
+    "title": "BMCR06",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMCR06.json"
+  },
+  {
+    "code": "BMAT05",
+    "category": "BMAT",
+    "title": "BMAT05",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMAT05.json"
+  },
+  {
+    "code": "BMCR12",
+    "category": "BMCR",
+    "title": "BMCR12",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMCR12.json"
+  },
+  {
+    "code": "BMMI03",
+    "category": "BMMI",
+    "title": "BMMI03",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMMI03.json"
+  },
+  {
+    "code": "BMMI02",
+    "category": "BMMI",
+    "title": "BMMI02",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMMI02.json"
+  },
+  {
+    "code": "BMCR13",
+    "category": "BMCR",
+    "title": "BMCR13",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMCR13.json"
+  },
+  {
+    "code": "BMAT04",
+    "category": "BMAT",
+    "title": "BMAT04",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMAT04.json"
+  },
+  {
+    "code": "BMCR07",
+    "category": "BMCR",
+    "title": "BMCR07",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMCR07.json"
+  },
+  {
+    "code": "MINORALARM",
+    "category": "MINORALARM",
+    "title": "Alarm Troubleshoting",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/MINORALARM.json"
+  },
+  {
+    "code": "BMAT06",
+    "category": "BMAT",
+    "title": "BMAT06",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMAT06.json"
+  },
+  {
+    "code": "BMCR11",
+    "category": "BMCR",
+    "title": "BMCR11",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMCR11.json"
+  },
+  {
+    "code": "BMCR05",
+    "category": "BMCR",
+    "title": "BMCR05",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMCR05.json"
+  },
+  {
+    "code": "BMMI01",
+    "category": "BMMI",
+    "title": "BMMI01",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMMI01.json"
+  },
+  {
+    "code": "BMCR04",
+    "category": "BMCR",
+    "title": "BMCR04",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMCR04.json"
+  },
+  {
+    "code": "BMCR10",
+    "category": "BMCR",
+    "title": "BMCR10",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMCR10.json"
+  },
+  {
+    "code": "BMAT07",
+    "category": "BMAT",
+    "title": "BMAT07",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMAT07.json"
+  },
+  {
+    "code": "MAJORALARM",
+    "category": "MAJORALARM",
+    "title": "Major Alarms",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/MAJORALARM.json"
+  },
+  {
+    "code": "PRC5",
+    "category": "PRC",
+    "title": "PRC5",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/PRC5.json"
+  },
+  {
+    "code": "BMMJ04",
+    "category": "BMMJ",
+    "title": "BMMJ04",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMMJ04.json"
+  },
+  {
+    "code": "BMMJ10",
+    "category": "BMMJ",
+    "title": "BMMJ10",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMMJ10.json"
+  },
+  {
+    "code": "BMMJ11",
+    "category": "BMMJ",
+    "title": "BMMJ11",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMMJ11.json"
+  },
+  {
+    "code": "BMMJ05",
+    "category": "BMMJ",
+    "title": "BMMJ05",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMMJ05.json"
+  },
+  {
+    "code": "PRC4",
+    "category": "PRC",
+    "title": "PRC4",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/PRC4.json"
+  },
+  {
+    "code": "BMMJ13",
+    "category": "BMMJ",
+    "title": "BMMJ13",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMMJ13.json"
+  },
+  {
+    "code": "BMMJ07",
+    "category": "BMMJ",
+    "title": "BMMJ07",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMMJ07.json"
+  },
+  {
+    "code": "SERVOMANUAL",
+    "category": "SERVOMANUAL",
+    "title": "Servo manual",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/SERVOMANUAL.json"
+  },
+  {
+    "code": "BMMJ06",
+    "category": "BMMJ",
+    "title": "BMMJ06",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMMJ06.json"
+  },
+  {
+    "code": "BMMJ12",
+    "category": "BMMJ",
+    "title": "BMMJ12",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMMJ12.json"
+  },
+  {
+    "code": "PRC3",
+    "category": "PRC",
+    "title": "PRC3",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/PRC3.json"
+  },
+  {
+    "code": "BMMJ16",
+    "category": "BMMJ",
+    "title": "BMMJ16",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMMJ16.json"
+  },
+  {
+    "code": "BMMJ02",
+    "category": "BMMJ",
+    "title": "BMMJ02",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMMJ02.json"
+  },
+  {
+    "code": "BMMJ03",
+    "category": "BMMJ",
+    "title": "BMMJ03",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMMJ03.json"
+  },
+  {
+    "code": "BMMJ17",
+    "category": "BMMJ",
+    "title": "BMMJ17",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMMJ17.json"
+  },
+  {
+    "code": "PRC2",
+    "category": "PRC",
+    "title": "PRC2",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/PRC2.json"
+  },
+  {
+    "code": "BMMJ01",
+    "category": "BMMJ",
+    "title": "BMMJ01",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMMJ01.json"
+  },
+  {
+    "code": "BMMJ15",
+    "category": "BMMJ",
+    "title": "BMMJ15",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMMJ15.json"
+  },
+  {
+    "code": "ATTACHMENTNONCRITICALALARM",
+    "category": "ATTACHMENTNONCRITICALALARM",
+    "title": "ACA01 Rejeced blister on Conveyor Track 1",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/ATTACHMENTNONCRITICALALARM.json"
+  },
+  {
+    "code": "BMMJ14",
+    "category": "BMMJ",
+    "title": "BMMJ14",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/BMMJ14.json"
+  },
+  {
+    "code": "PRC1",
+    "category": "PRC",
+    "title": "PRC1",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/PRC1.json"
+  },
+  {
+    "code": "DE",
+    "category": "DE",
+    "title": "\"Official Flag of Germany\" Sticker for Sale by mrawfle | Redbubble",
+    "path": "/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA/data/processed/DE.json"
+  }
+]

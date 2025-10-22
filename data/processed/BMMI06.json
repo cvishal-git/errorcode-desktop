@@ -1,0 +1,35 @@
+{
+  "code": "BMMI06",
+  "category": "BMMI",
+  "title": "BMMI06",
+  "alarm_message": "Trims Bin Full",
+  "description": "Trims collection bin is full.",
+  "reasons_remedies": [
+    "Trims Bin is Full.",
+    "Empty the Trim bin.",
+    "Trim Bin sensor blocked by trim or other objest.",
+    "Clear the trim or the object blocking the trim bin sensor.",
+    "Sensor is faulty.",
+    "Dismount the sensor and check if sensor is giving false output. If so replace the sensor."
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/BlisterBins.png",
+      "type": "png",
+      "caption": "",
+      "tags": [
+        "blisterbins"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/TrimsBin.jpg",
+      "type": "jpg",
+      "caption": "",
+      "tags": [
+        "trimsbin"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMMI06\nError Code 06\nCategory: BMMI\nTitle: BMMI06\nAlarm Message: Trims Bin Full\nDescription: Trims collection bin is full.\nReason & Remedy:\n1. Trims Bin is Full.\n2. Empty the Trim bin.\n3. Trim Bin sensor blocked by trim or other objest.\n4. Clear the trim or the object blocking the trim bin sensor.\n5. Sensor is faulty.\n6. Dismount the sensor and check if sensor is giving false output. If so replace the sensor.\nVisual References:",
+  "notes": ""
+}

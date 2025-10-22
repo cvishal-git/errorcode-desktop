@@ -1,0 +1,39 @@
+{
+  "code": "BMMI02",
+  "category": "BMMI",
+  "title": "BMMI02",
+  "alarm_message": "Base Foil 2 Low Level",
+  "description": "Base foil 2 is less than the set level.",
+  "reasons_remedies": [
+    "The forming film gets low on the forming film mounting unit.",
+    "Insert new forming film reel on forming film mounting unit.",
+    "The sensor is not working correctly.",
+    "Check the sensor and set it correctly.",
+    "Refer Chapter \"Maintenance\" > Section \" Setting the Diffuse Reflection Sensor\""
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/BaseFoilLowLoc.png",
+      "type": "png",
+      "caption": "Base foil Mounting and switch Foil Location",
+      "tags": [
+        "base",
+        "foil",
+        "mounting",
+        "and",
+        "switch",
+        "basefoillowloc"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/BaseFoilLowLevel.JPG",
+      "type": "jpg",
+      "caption": "",
+      "tags": [
+        "basefoillowlevel"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMMI02\nError Code 02\nCategory: BMMI\nTitle: BMMI02\nAlarm Message: Base Foil 2 Low Level\nDescription: Base foil 2 is less than the set level.\nReason & Remedy:\n1. The forming film gets low on the forming film mounting unit.\n2. Insert new forming film reel on forming film mounting unit.\n3. The sensor is not working correctly.\n4. Check the sensor and set it correctly.\n5. Refer Chapter \"Maintenance\" > Section \" Setting the Diffuse Reflection Sensor\"\nVisual References:\n- Base foil Mounting and switch Foil Location",
+  "notes": ""
+}

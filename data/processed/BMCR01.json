@@ -1,0 +1,77 @@
+{
+  "code": "BMCR01",
+  "category": "BMCR",
+  "title": "BMCR01",
+  "alarm_message": "Emergency stop at Console",
+  "description": "",
+  "reasons_remedies": [
+    "The emergency stop push button (on the operator panel or near the punching unit) is pressed.",
+    "Turn the emergency stop push-button clockwise to unlock and reset it.",
+    "(Emergency Location)",
+    "(Emergency Switch Release)",
+    "The input wiring is loose or damaged.",
+    "Check wiring from input to PLC and take corrective action.",
+    "(Emergency Switch NC Contact)",
+    "The emergency stop push-button NC contact is not functioning.",
+    "Check the emergency stop push-button NC contact and replace it if it is faulty.",
+    "Loose connection on contactor.(refer electrical diagram)"
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/EmergencyLocation.gif",
+      "type": "gif",
+      "caption": "emergency stop switch Location",
+      "tags": [
+        "emergency",
+        "stop",
+        "switch",
+        "location",
+        "emergencylocation"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/EmergencyConsoleJPG.JPG",
+      "type": "jpg",
+      "caption": "",
+      "tags": [
+        "emergencyconsolejpg"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/Emergency.gif",
+      "type": "gif",
+      "caption": "emergency stop switch",
+      "tags": [
+        "emergency",
+        "stop",
+        "switch"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/EmergencyNC.JPG",
+      "type": "jpg",
+      "caption": "emergency stop switch",
+      "tags": [
+        "emergency",
+        "stop",
+        "switch",
+        "emergencync"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/EmergencyConsoleWiring.gif",
+      "type": "gif",
+      "caption": "Emergency switch Wiring (Electrical Drawing Page No:21)",
+      "tags": [
+        "emergency",
+        "switch",
+        "wiring",
+        "electrical",
+        "drawing",
+        "emergencyconsolewiring"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMCR01\nError Code 01\nCategory: BMCR\nTitle: BMCR01\nAlarm Message: Emergency stop at Console\nReason & Remedy:\n1. The emergency stop push button (on the operator panel or near the punching unit) is pressed.\n2. Turn the emergency stop push-button clockwise to unlock and reset it.\n3. (Emergency Location)\n4. (Emergency Switch Release)\n5. The input wiring is loose or damaged.\n6. Check wiring from input to PLC and take corrective action.\n7. (Emergency Switch NC Contact)\n8. The emergency stop push-button NC contact is not functioning.\n9. Check the emergency stop push-button NC contact and replace it if it is faulty.\n10. Loose connection on contactor.(refer electrical diagram)\nVisual References:\n- emergency stop switch Location\n- emergency stop switch\n- emergency stop switch\n- Emergency switch Wiring (Electrical Drawing Page No:21)",
+  "notes": ""
+}

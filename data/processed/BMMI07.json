@@ -1,0 +1,35 @@
+{
+  "code": "BMMI07",
+  "category": "BMMI",
+  "title": "BMMI07",
+  "alarm_message": "Overflow Blister Bin Full",
+  "description": "Overflow blister collection bin full",
+  "reasons_remedies": [
+    "Overflow Blister Bin is Full.",
+    "Empty the Overflow Blister Bin.",
+    "Overflow Blister Bin sensor blocked by Blister or other objest.",
+    "Clear the Blister or the object blocking the Overflow Blister Bin sensor.",
+    "Sensor is faulty.",
+    "Dismount the sensor and check if sensor is giving false output. If so replace the sensor."
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/BlisterBins.png",
+      "type": "png",
+      "caption": "",
+      "tags": [
+        "blisterbins"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/OverFlowBin.jpg",
+      "type": "jpg",
+      "caption": "",
+      "tags": [
+        "overflowbin"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMMI07\nError Code 07\nCategory: BMMI\nTitle: BMMI07\nAlarm Message: Overflow Blister Bin Full\nDescription: Overflow blister collection bin full\nReason & Remedy:\n1. Overflow Blister Bin is Full.\n2. Empty the Overflow Blister Bin.\n3. Overflow Blister Bin sensor blocked by Blister or other objest.\n4. Clear the Blister or the object blocking the Overflow Blister Bin sensor.\n5. Sensor is faulty.\n6. Dismount the sensor and check if sensor is giving false output. If so replace the sensor.\nVisual References:",
+  "notes": ""
+}

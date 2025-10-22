@@ -1,0 +1,30 @@
+{
+  "code": "BMCR25",
+  "category": "BMCR",
+  "title": "BMCR25",
+  "alarm_message": "Web Loop Sensor",
+  "description": "Blister web in indexing station sliped or placed at improper distance.",
+  "reasons_remedies": [
+    "Web loop setting fault.",
+    "Web loop should be set between two sensor and sensor should not sense web while machine is running. Refer video tutorial to set webloop.",
+    "Blister Web Sliped form indexing drum.",
+    "Insert the blister web properly inside the indexing drum.",
+    "Blister web position distrubed form inital position.",
+    "Check and adjust the web according to initial position.",
+    "(Web Loop Sensor)",
+    "Web Loop Sensor Faulty.",
+    "Check if sensor is high without sensing the web if so, replace the sensor."
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/WebloopSensor.JPG",
+      "type": "jpg",
+      "caption": "",
+      "tags": [
+        "webloopsensor"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMCR25\nError Code 25\nCategory: BMCR\nTitle: BMCR25\nAlarm Message: Web Loop Sensor\nDescription: Blister web in indexing station sliped or placed at improper distance.\nReason & Remedy:\n1. Web loop setting fault.\n2. Web loop should be set between two sensor and sensor should not sense web while machine is running. Refer video tutorial to set webloop.\n3. Blister Web Sliped form indexing drum.\n4. Insert the blister web properly inside the indexing drum.\n5. Blister web position distrubed form inital position.\n6. Check and adjust the web according to initial position.\n7. (Web Loop Sensor)\n8. Web Loop Sensor Faulty.\n9. Check if sensor is high without sensing the web if so, replace the sensor.\nVisual References:",
+  "notes": ""
+}

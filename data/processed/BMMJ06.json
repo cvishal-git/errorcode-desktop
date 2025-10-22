@@ -1,0 +1,44 @@
+{
+  "code": "BMMJ06",
+  "category": "BMMJ",
+  "title": "BMMJ06",
+  "alarm_message": "Lidding Foil End",
+  "description": "Lidding Foil Ended or sensor not sensing the foil.",
+  "reasons_remedies": [
+    "The lidding foil end switch is activated.",
+    "Check whether the lidding foil is finished.",
+    "Load new lidding foil reel if needed.",
+    "Join the lidding foil with another lidding foil, which will be finished.",
+    "Check if the lidding foil moves out from the lidding foil end switch."
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/LidFoilSwitchLoc.png",
+      "type": "png",
+      "caption": "Lidding Foil End Switch Location",
+      "tags": [
+        "lidding",
+        "foil",
+        "end",
+        "switch",
+        "location",
+        "lidfoilswitchloc"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/LiddingFoilEnd2.JPG",
+      "type": "jpg",
+      "caption": "Lifdding foil Mounting and switch Foil Location",
+      "tags": [
+        "lifdding",
+        "foil",
+        "mounting",
+        "and",
+        "switch",
+        "liddingfoilend"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMMJ06\nError Code 06\nCategory: BMMJ\nTitle: BMMJ06\nAlarm Message: Lidding Foil End\nDescription: Lidding Foil Ended or sensor not sensing the foil.\nReason & Remedy:\n1. The lidding foil end switch is activated.\n2. Check whether the lidding foil is finished.\n3. Load new lidding foil reel if needed.\n4. Join the lidding foil with another lidding foil, which will be finished.\n5. Check if the lidding foil moves out from the lidding foil end switch.\nVisual References:\n- Lidding Foil End Switch Location\n- Lifdding foil Mounting and switch Foil Location",
+  "notes": ""
+}

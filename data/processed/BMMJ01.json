@@ -1,0 +1,43 @@
+{
+  "code": "BMMJ01",
+  "category": "BMMJ",
+  "title": "BMMJ01",
+  "alarm_message": "Guard Open 1- 17",
+  "description": "Machine guard opened or PLC is not receiving guard protection signal. Check Guard switch input in PLC input card-3.",
+  "reasons_remedies": [
+    "The machine guard is open.",
+    "Close guard.",
+    "Check whether the guard switch is engaged correctly.",
+    "Check electrical wiring.",
+    "Check the guard switch for any faults.",
+    "Replace the guard switch if needed.",
+    "(Guard Switch)",
+    "(Guard Latch)"
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/GuardSwitch1.jpg",
+      "type": "jpg",
+      "caption": "Guard switch image",
+      "tags": [
+        "guard",
+        "switch",
+        "image",
+        "guardswitch"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/GuardSwitch2.JPG",
+      "type": "jpg",
+      "caption": "Guard switch image",
+      "tags": [
+        "guard",
+        "switch",
+        "image",
+        "guardswitch"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMMJ01\nError Code 01\nCategory: BMMJ\nTitle: BMMJ01\nAlarm Message: Guard Open 1- 17\nDescription: Machine guard opened or PLC is not receiving guard protection signal. Check Guard switch input in PLC input card-3.\nReason & Remedy:\n1. The machine guard is open.\n2. Close guard.\n3. Check whether the guard switch is engaged correctly.\n4. Check electrical wiring.\n5. Check the guard switch for any faults.\n6. Replace the guard switch if needed.\n7. (Guard Switch)\n8. (Guard Latch)\nVisual References:\n- Guard switch image\n- Guard switch image",
+  "notes": ""
+}

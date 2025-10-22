@@ -1,0 +1,25 @@
+{
+  "code": "BMMJ03",
+  "category": "BMMJ",
+  "title": "BMMJ03",
+  "alarm_message": "Homing Not Done",
+  "description": "Machine Homing Not Done after machine power supply turned on.",
+  "reasons_remedies": [
+    "The homing machine process is not performed.",
+    "On the Home screen, tap the Machine Homing key to move all machine units to their original position."
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/HomingSRC.png",
+      "type": "png",
+      "caption": "Home Screen",
+      "tags": [
+        "home",
+        "screen",
+        "homingsrc"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMMJ03\nError Code 03\nCategory: BMMJ\nTitle: BMMJ03\nAlarm Message: Homing Not Done\nDescription: Machine Homing Not Done after machine power supply turned on.\nReason & Remedy:\n1. The homing machine process is not performed.\n2. On the Home screen, tap the Machine Homing key to move all machine units to their original position.\nVisual References:\n- Home Screen",
+  "notes": ""
+}

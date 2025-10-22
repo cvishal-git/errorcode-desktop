@@ -1,0 +1,44 @@
+{
+  "code": "BMMI04",
+  "category": "BMMI",
+  "title": "BMMI04",
+  "alarm_message": "Hopper Low level",
+  "description": "Product inside the hopper is lower that set level. Reason & Remedy",
+  "reasons_remedies": [
+    "The product level gets low in the hopper",
+    "Insert the product into the hopper.",
+    "The sensor is not working correctly.",
+    "Check the sensor and set it correctly.",
+    "? Refer to Chapter \"Maintenance\" > Section \"Setting the Capacitive Sensor.\""
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/HopperLowLoc.png",
+      "type": "png",
+      "caption": "Base foil Mounting and switch Foil Location",
+      "tags": [
+        "base",
+        "foil",
+        "mounting",
+        "and",
+        "switch",
+        "hopperlowloc"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/HopperLevel.jpg",
+      "type": "jpg",
+      "caption": "Base foil Mounting and switch Foil Location",
+      "tags": [
+        "base",
+        "foil",
+        "mounting",
+        "and",
+        "switch",
+        "hopperlevel"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMMI04\nError Code 04\nCategory: BMMI\nTitle: BMMI04\nAlarm Message: Hopper Low level\nDescription: Product inside the hopper is lower that set level. Reason & Remedy\nReason & Remedy:\n1. The product level gets low in the hopper\n2. Insert the product into the hopper.\n3. The sensor is not working correctly.\n4. Check the sensor and set it correctly.\n5. ? Refer to Chapter \"Maintenance\" > Section \"Setting the Capacitive Sensor.\"\nVisual References:\n- Base foil Mounting and switch Foil Location\n- Base foil Mounting and switch Foil Location",
+  "notes": ""
+}

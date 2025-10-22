@@ -1,0 +1,31 @@
+{
+  "code": "SERVOMANUAL",
+  "category": "SERVOMANUAL",
+  "title": "Servo manual",
+  "alarm_message": "",
+  "description": "",
+  "reasons_remedies": [],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/Close.jpg",
+      "type": "jpg",
+      "caption": "",
+      "tags": [
+        "close"
+      ]
+    },
+    {
+      "path": "HTML/D:/Help_PDF/J4_Drive_Error_page-001a.jpg",
+      "type": "jpg",
+      "caption": "Image 1",
+      "tags": [
+        "image",
+        "drive",
+        "error",
+        "page"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code SERVOMANUAL\nError Code SERVOMANUAL\nCategory: SERVOMANUAL\nTitle: Servo manual\nVisual References:\n- Image 1",
+  "notes": ""
+}

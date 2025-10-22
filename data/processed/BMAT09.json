@@ -1,0 +1,44 @@
+{
+  "code": "BMAT09",
+  "category": "BMAT",
+  "title": "BMAT09",
+  "alarm_message": "Stray Product Detected",
+  "description": "",
+  "reasons_remedies": [
+    "Product is not completed inserted in cavity.",
+    "Check the feeding if prodct is placed properly inside cavity.",
+    "Check if cavity for poduct is formed properly. Check the depth of forming is as per blister format drawing.",
+    "Stray prodct sensor not placed correctly.",
+    "Check if stray product flap is placed correctly and sensor is sensing onl when start prodct is present."
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/StrayProdct1.jpg",
+      "type": "jpg",
+      "caption": "Note: Ensure machine is stoped before opening the guard door.",
+      "tags": [
+        "note",
+        "ensure",
+        "machine",
+        "stoped",
+        "before",
+        "strayprodct"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/StrayProdct2.jpg",
+      "type": "jpg",
+      "caption": "Note: Ensure machine is stoped before opening the guard door.",
+      "tags": [
+        "note",
+        "ensure",
+        "machine",
+        "stoped",
+        "before",
+        "strayprodct"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMAT09\nError Code 09\nCategory: BMAT\nTitle: BMAT09\nAlarm Message: Stray Product Detected\nReason & Remedy:\n1. Product is not completed inserted in cavity.\n2. Check the feeding if prodct is placed properly inside cavity.\n3. Check if cavity for poduct is formed properly. Check the depth of forming is as per blister format drawing.\n4. Stray prodct sensor not placed correctly.\n5. Check if stray product flap is placed correctly and sensor is sensing onl when start prodct is present.\nVisual References:\n- Note: Ensure machine is stoped before opening the guard door.\n- Note: Ensure machine is stoped before opening the guard door.",
+  "notes": ""
+}

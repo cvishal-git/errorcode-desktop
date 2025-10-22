@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+llama-cpp-python==0.2.90
+sentence-transformers==2.7.0
+chromadb==0.4.24
+pyyaml
+einops

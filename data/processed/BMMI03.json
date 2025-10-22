@@ -1,0 +1,31 @@
+{
+  "code": "BMMI03",
+  "category": "BMMI",
+  "title": "BMMI03",
+  "alarm_message": "Lidding Foil Low Level",
+  "description": "Lidding foil is less than the set level.",
+  "reasons_remedies": [
+    "The lidding foil gets low on the lidding foil mounting unit",
+    "Insert a new lidding foil reel on the lidding foil mounting unit.",
+    "Check the sensor and set it correctly. Refer Chapter \"Maintenance\" > Section \"Setting the Diffuse Reflection Sensor\"",
+    "The sensor is not working correctly.",
+    "Replace the sensor if it is faulty."
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/LidFoilLowLoc.png",
+      "type": "png",
+      "caption": "Base foil Mounting and switch Foil Location",
+      "tags": [
+        "base",
+        "foil",
+        "mounting",
+        "and",
+        "switch",
+        "lidfoillowloc"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMMI03\nError Code 03\nCategory: BMMI\nTitle: BMMI03\nAlarm Message: Lidding Foil Low Level\nDescription: Lidding foil is less than the set level.\nReason & Remedy:\n1. The lidding foil gets low on the lidding foil mounting unit\n2. Insert a new lidding foil reel on the lidding foil mounting unit.\n3. Check the sensor and set it correctly. Refer Chapter \"Maintenance\" > Section \"Setting the Diffuse Reflection Sensor\"\n4. The sensor is not working correctly.\n5. Replace the sensor if it is faulty.\nVisual References:\n- Base foil Mounting and switch Foil Location",
+  "notes": ""
+}

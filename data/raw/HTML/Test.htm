@@ -1,0 +1,191 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<script>
+var x,y,n=0,ny=0,rotINT,rotYINT
+function rotateDIV()
+{
+x=document.getElementById("rotate2D")
+clearInterval(rotINT)
+rotINT=setInterval("startRotate()",10)
+}
+function rotateYDIV()
+{
+y=document.getElementById("rotate3D")
+clearInterval(rotYINT)
+rotYINT=setInterval("startYRotate()",10)
+}
+function startRotate()
+{
+n=n+1
+x.style.transform="rotate(" + n + "deg)"
+x.style.webkitTransform="rotate(" + n + "deg)"
+x.style.OTransform="rotate(" + n + "deg)"
+x.style.MozTransform="rotate(" + n + "deg)"
+if (n==180 || n==360)
+{
+clearInterval(rotINT)
+if (n==360){n=0}
+}
+}
+function startYRotate()
+{
+ny=ny+1
+y.style.transform="rotateY(" + ny + "deg)"
+y.style.webkitTransform="rotateY(" + ny + "deg)"
+y.style.OTransform="rotateY(" + ny + "deg)"
+y.style.MozTransform="rotateY(" + ny + "deg)"
+if (ny==180 || ny>=360)
+{
+clearInterval(rotYINT)
+if (ny>=360){ny=0}
+}
+}
+</script>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<link rel="stylesheet" href="style.css">
+<Title>Test</Title>
+</HEAD>
+<BODY>
+
+    <div class="topnav">
+      <a href="Alarm_Trobleshooting.htm">Home</a>
+      <a class="active" href="Critical Alarm.htm">Critical Alarm</a>
+      <a href="Major Alarm.htm">Major Alarm</a>
+      <a href="Minor Alarm.htm">Minor Alarm</a>
+      <a href="Attachment Alarm.htm">Attachment Alarms</a>
+      <!--
+      <div class="dropdown" style="padding-left:400px;">
+        <button class="dropbtn">Language-EN</button>
+        <div class="dropdown-content" >
+          <a href="BMCR01.htm"><img src="/HTML/Help_Images_BMAX/uk.png" style="width: 50px; height: 30px;"> - EN</a><br>
+          <a href="DE_BMCR01.html"><img src="/HTML/Help_Images_BMAX/DE.png" style="width: 50px; height: 30px;"> - DE</a><br>
+          <a href="MS_BMCR01.htm"><img src="/HTML/Help_Images_BMAX/MS.png" style="width: 50px; height: 30px;"> - MS</a>
+          </div>
+      </div> -->
+     <!-- <span style="float: right;">     
+      <img src="/HTML/Help_Images_BMAX/uk.png" style="width: 50px;height: 30px;padding-top: 10px;"  >  -->
+      <img src = "/HTML/Help_Images_BMAX/ACG.png" align="right">
+    </div>         
+  </span>
+    </div>
+    
+    <aside class="sidebar">
+      <a class="active" href="BMCR01.htm">BMCR01</a></li>
+      <a href="BMCR02.htm">BMCR02</a></li>
+      <a href="BMCR03.htm">BMCR03</a>
+      <a href="BMCR04.htm">BMCR04</a>
+      <a href="BMCR05.htm">BMCR05</a>
+      <a href="BMCR06.htm">BMCR06</a>
+      <a href="BMCR07.htm">BMCR07</a>
+      <a href="BMCR08.htm">BMCR08</a>
+      <a href="BMCR09.htm">BMCR09</a>
+      <a href="BMCR10.htm">BMCR10</a>
+      <a href="BMCR11.htm">BMCR11</a>
+      <a href="BMCR12.htm">BMCR12</a>
+      <a href="BMCR13.htm">BMCR13</a>
+      <a href="BMCR14.htm">BMCR14</a>
+      <a href="BMCR15.htm">BMCR15</a>
+      <a href="BMCR16.htm">BMCR16</a>
+      <a href="BMCR17.htm">BMCR17</a>
+      <a href="BMCR19.htm">BMCR19</a>
+      <a href="BMCR20.htm">BMCR20</a>
+      <a href="BMCR21.htm">BMCR21</a>
+      <a href="BMCR22.htm">BMCR22</a>
+      <a href="BMCR23.htm">BMCR23</a>
+      <a href="BMCR24.htm">BMCR24</a>
+      <a href="BMCR25.htm">BMCR25</a> 
+      <a></a> 
+      <br><br><br>  
+    </aside> 
+
+    <div class="content">  
+     
+      <div class="header"><br>&nbsp
+       <b>Error code :</b> 
+        BMCR01 <!--Error code number-->
+        <span style="float : right">
+          <b>Alarm Message:</b>
+          Emergency stop at Console  &nbsp <!--Alarm Message-->
+        </span>
+       </div>
+
+    <p calss="description"> 
+    <b><u>Alarm Description</u></b><br>
+    Emergency Stop push button pressed on console or PLC is not receiving emergency closed signal. Check input X20 on Input Card-1.</p>
+    
+    
+    
+    <b ><u>Reason & Remedy</u></b> <br><br>
+
+    <div class="reason1">
+    1.The emergency stop push button (on the operator panel or near the punching unit) is pressed.<br>
+    &nbsp &nbsp	 <img src = "/HTML/Help_Images_BMAX/Downarrow.png" alt = " >>" width="50" length="50">
+    a. Turn the emergency stop push-button clockwise to unlock and reset it.<br>
+
+    <div onmousedown="rotateYDIV()" id="rotate3D" style="transform: rotateY()">
+      nbsp<img src = "/HTML/Help_Images_BMAX/EmergencyLocation.gif"  alt = " emergency stop switch Location" width="1000" height="483"><br>
+    </div>
+   
+    <!--image location and size-->
+    <center>
+      <div onmouseover="rotateYDIV()"  id="rotate3D" style="transform: rotateY(360deg);">123
+        </div>
+        &nbsp<img src = "/HTML/Help_Images_BMAX/EmergencyLocation.gif"  alt = " emergency stop switch Location" width="1000" height="483"><br></div>
+    (Emergency Location)<br> <!--Image title-->
+    <img src="/HTML/Help_Images_BMAX/EmergencyConsoleJPG.JPG" width="250" height="300">
+    
+    &nbsp<img src = "/HTML/Help_Images_BMAX/Emergency.gif" alt = " emergency stop switch" width="200" length="200"> <br>
+    (Emergency Switch Release)
+   </center><br> 
+  </div>
+    
+    <div class="reason2">
+    2. The input wiring is loose or damaged.<br>
+    &nbsp &nbsp	 <img src = "/HTML/Help_Images_BMAX/Downarrow.png" alt = " >>" width="50" length="50">   
+    a. Check wiring from input to PLC and take corrective action.<br>
+    <center>
+      &nbsp<img src = "/HTML/Help_Images_BMAX/EmergencyNC.JPG" alt = " emergency stop switch"  width="400" length="300" ><br>      
+      (Emergency Switch NC Contact)
+      <br>
+    </center>
+  </div>
+    <div class="reason1">
+    3. The emergency stop push-button NC contact is not functioning.<br>
+    &nbsp &nbsp	 <img src = "/HTML/Help_Images_BMAX/Downarrow.png" alt = " >>" width="50" length="50">  
+    a. Check the emergency stop push-button NC contact and replace it if it is faulty.</div>
+
+    <div class="reason2">
+      4.Loose connection on contactor.(refer electrical diagram)
+    </div>
+    <center>        
+        &nbsp<img src = "/HTML/Help_Images_BMAX/EmergencyNC.JPG" alt = " emergency stop switch"  width="400" length="300" ><br>      
+        (Emergency Switch NC Contact)<br>
+    </center>
+  
+  <br><br><br>
+   <center>
+    Emergency switch Wiring (Electrical Drawing Page No:21)
+  </center>
+  <img src="/HTML/Help_Images_BMAX/EmergencyConsoleWiring.gif">
+    
+  <br><br><br>
+
+
+
+<hr width="98%"  size="5" color="LightGray" >
+<div class="footer1">
+  BMAX Plus Machine Trouble shoting <!--machine model name-->
+    <div class="footer2" >
+      For Support mail us with alarm Code on : acg-mail.com <!--Email Id to contact-->
+    </div> 
+</div>
+
+<br>
+</div>
+
+</span>
+</BODY>
+</HTML>
+
+          

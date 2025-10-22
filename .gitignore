@@ -1,0 +1,69 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+.mypy_cache/
+.dmypy.json
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Node.js / Frontend
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.yarn/
+dist/
+dist-ssr/
+*.local
+.cache/
+.parcel-cache
+.eslintcache
+
+# IDE / Editor files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Database and ChromaDB
+database/
+chromadb/
+*.db
+*.sqlite
+*.sqlite3
+
+# Large model files
+models/
+
+# Build resources
+build-resources/
+
+# Logs and temporary files
+logs/
+*.log
+*.tmp
+*.temp

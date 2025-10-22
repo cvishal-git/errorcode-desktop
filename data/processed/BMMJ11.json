@@ -1,0 +1,14 @@
+{
+  "code": "BMMJ11",
+  "category": "BMMJ",
+  "title": "BMMJ11",
+  "alarm_message": "Line Machine Not Ready",
+  "description": "Line Machine is in error mode or the line machien connector is not connected. Reason & Remedy",
+  "reasons_remedies": [
+    "The signal from the line machine is not received.",
+    "Check the signal from the line machine and take corrective action."
+  ],
+  "media": [],
+  "text_for_embedding": "Error Code BMMJ11\nError Code 11\nCategory: BMMJ\nTitle: BMMJ11\nAlarm Message: Line Machine Not Ready\nDescription: Line Machine is in error mode or the line machien connector is not connected. Reason & Remedy\nReason & Remedy:\n1. The signal from the line machine is not received.\n2. Check the signal from the line machine and take corrective action.",
+  "notes": ""
+}

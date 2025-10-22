@@ -1,0 +1,43 @@
+{
+  "code": "BMCR10",
+  "category": "BMCR",
+  "title": "BMCR10",
+  "alarm_message": "Forming Bottom Low Temperature",
+  "description": "Actual temperature is lower than set low band limit. (Low Band limit = Set temperature - Low band)",
+  "reasons_remedies": [
+    "The temperature of the bottom heating plate is low (15 0C less than the set temperature).",
+    "Check the temperature set for the bottom heating plate.",
+    "Check the band value set for the bottom heating plate.",
+    "Check the temperature sensor of the bottom heating plate.",
+    "Parameters re OK but temperature not risnig.",
+    "Check if themocouple is connected to bottom heater plate properly.",
+    "Check if the SSR is switching on.",
+    "Check if Contactor is on.",
+    "Check the heater connection and check voltage during on condition at SSR output and Junction Box.",
+    "Check heater resistance.",
+    "PID parameters.",
+    "Check if the deafult PID parameters are shown on machine as per below image."
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/PID.png",
+      "type": "png",
+      "caption": "Sealing screen",
+      "tags": [
+        "sealing",
+        "screen",
+        "pid"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/FormBot.png",
+      "type": "png",
+      "caption": "",
+      "tags": [
+        "formbot"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMCR10\nError Code 10\nCategory: BMCR\nTitle: BMCR10\nAlarm Message: Forming Bottom Low Temperature\nDescription: Actual temperature is lower than set low band limit. (Low Band limit = Set temperature - Low band)\nReason & Remedy:\n1. The temperature of the bottom heating plate is low (15 0C less than the set temperature).\n2. Check the temperature set for the bottom heating plate.\n3. Check the band value set for the bottom heating plate.\n4. Check the temperature sensor of the bottom heating plate.\n5. Parameters re OK but temperature not risnig.\n6. Check if themocouple is connected to bottom heater plate properly.\n7. Check if the SSR is switching on.\n8. Check if Contactor is on.\n9. Check the heater connection and check voltage during on condition at SSR output and Junction Box.\n10. Check heater resistance.\n11. PID parameters.\n12. Check if the deafult PID parameters are shown on machine as per below image.\nVisual References:\n- Sealing screen",
+  "notes": ""
+}

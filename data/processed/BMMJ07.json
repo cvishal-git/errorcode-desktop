@@ -1,0 +1,25 @@
+{
+  "code": "BMMJ07",
+  "category": "BMMJ",
+  "title": "BMMJ07",
+  "alarm_message": "Vacuum Key OFF",
+  "description": "Vacuum Key is turnred off manally from IPC or it is turned off due to emergency switch.",
+  "reasons_remedies": [
+    "The Vacuum key is off.",
+    "Tap the Vacuum key to activate the vacuum pump function on the Basic screen."
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/VacuumSRC.png",
+      "type": "png",
+      "caption": "Vacuum key",
+      "tags": [
+        "vacuum",
+        "key",
+        "vacuumsrc"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMMJ07\nError Code 07\nCategory: BMMJ\nTitle: BMMJ07\nAlarm Message: Vacuum Key OFF\nDescription: Vacuum Key is turnred off manally from IPC or it is turned off due to emergency switch.\nReason & Remedy:\n1. The Vacuum key is off.\n2. Tap the Vacuum key to activate the vacuum pump function on the Basic screen.\nVisual References:\n- Vacuum key",
+  "notes": ""
+}

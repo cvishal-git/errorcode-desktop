@@ -1,0 +1,11 @@
+{
+  "code": "ATTACHMENTNONCRITICALALARM",
+  "category": "ATTACHMENTNONCRITICALALARM",
+  "title": "ACA01 Rejeced blister on Conveyor Track 1",
+  "alarm_message": "",
+  "description": "",
+  "reasons_remedies": [],
+  "media": [],
+  "text_for_embedding": "Error Code ATTACHMENTNONCRITICALALARM\nError Code ATTACHMENTNONCRITICALALARM\nCategory: ATTACHMENTNONCRITICALALARM\nTitle: ACA01 Rejeced blister on Conveyor Track 1",
+  "notes": ""
+}

@@ -1,0 +1,50 @@
+{
+  "code": "BMCR09",
+  "category": "BMCR",
+  "title": "BMCR09",
+  "alarm_message": "Forming Top Thermocouple Open",
+  "description": "Thermocouple disconneced form temperature card or at connector.",
+  "reasons_remedies": [
+    "The temperature sensor is not connected to the top heating plate.",
+    "Connect temperature sensor to top heating plate.",
+    "Check if the thermocouple cable is open or damaged. Check the Thermocouple connector and cable for continuty. Replace cable if continuity not found.",
+    "The temperature sensor failed.",
+    "Replace the temperature sensor."
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/ThermoConnector.JPG",
+      "type": "jpg",
+      "caption": "Thermocouple Connector Thermocouple Connector Opened Thermocouple Connector Closed",
+      "tags": [
+        "thermocouple",
+        "connector",
+        "opened",
+        "thermoconnector"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/Thermocople2.JPG",
+      "type": "jpg",
+      "caption": "Thermocouple Connector Thermocouple Connector Opened Thermocouple Connector Closed",
+      "tags": [
+        "thermocouple",
+        "connector",
+        "opened",
+        "thermocople"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/Thermocouple.JPG",
+      "type": "jpg",
+      "caption": "Thermocouple Connector Thermocouple Connector Opened Thermocouple Connector Closed",
+      "tags": [
+        "thermocouple",
+        "connector",
+        "opened"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMCR09\nError Code 09\nCategory: BMCR\nTitle: BMCR09\nAlarm Message: Forming Top Thermocouple Open\nDescription: Thermocouple disconneced form temperature card or at connector.\nReason & Remedy:\n1. The temperature sensor is not connected to the top heating plate.\n2. Connect temperature sensor to top heating plate.\n3. Check if the thermocouple cable is open or damaged. Check the Thermocouple connector and cable for continuty. Replace cable if continuity not found.\n4. The temperature sensor failed.\n5. Replace the temperature sensor.\nVisual References:\n- Thermocouple Connector Thermocouple Connector Opened Thermocouple Connector Closed\n- Thermocouple Connector Thermocouple Connector Opened Thermocouple Connector Closed\n- Thermocouple Connector Thermocouple Connector Opened Thermocouple Connector Closed",
+  "notes": ""
+}

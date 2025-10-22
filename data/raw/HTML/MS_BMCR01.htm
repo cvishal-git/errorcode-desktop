@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML oncontextmenu="return false;">
+<HEAD>
+<script language="JavaScript" src="nomenu.js"></script>
+<script language="JavaScript" src="nocopy.js"></script>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<link rel="stylesheet" href="style.css">
+<Title>BMCR01</Title>
+</HEAD>
+<BODY>
+
+    <div class="topnav">
+      <a href="Alarm_Trobleshooting.htm">Rumah</a>
+      <a class="active" href="Critical Alarm.htm">Penggera Kritikal</a>
+      <a href="Major Alarm.htm">Penggera Utama</a>
+      <a href="Minor Alarm.htm">Penggera Kecil</a>
+      <a href="Attachment Alarm.htm">Penggera Lampiran</a>
+      <div class="dropdown" style="padding-left:300px;">
+        <button class="dropbtn">Bahasa-MS</button>
+        <div class="dropdown-content">
+          <a href="BMCR01.htm"><img src="/HTML/Help_Images_BMAX/uk.png" style="width: 50px; height: 30px;"> - EN</a><br>
+          <a href="DE_BMCR01.html"><img src="/HTML/Help_Images_BMAX/DE.png" style="width: 50px; height: 30px;"> - DE</a><br>
+          <a href="MS_BMCR01.htm"><img src="/HTML/Help_Images_BMAX/MS.png" style="width: 50px; height: 30px;"> - MS</a><br>
+          </div>
+      </div> 
+      <span style="float: right;">     
+      <img src="/HTML/Help_Images_BMAX/MS.png" style="width: 50px;height: 30px;padding-top: 10px;"  >  
+      <img src = "/HTML/Help_Images_BMAX/ACG.png" align="right" >
+    </div>         
+  </span>
+    </div>
+    
+    <aside class="sidebar">
+      <a class="active" href="BMCR01.htm">BMCR01</a></li>
+      <a href="BMCR02.htm">BMCR02</a></li>
+      <a href="BMCR03.htm">BMCR03</a>
+      <a href="BMCR04.htm">BMCR04</a>
+      <a href="BMCR05.htm">BMCR05</a>
+      <a href="BMCR06.htm">BMCR06</a>
+      <a href="BMCR07.htm">BMCR07</a>
+      <a href="BMCR08.htm">BMCR08</a>
+      <a href="BMCR09.htm">BMCR09</a>
+      <a href="BMCR10.htm">BMCR10</a>
+      <a href="BMCR11.htm">BMCR11</a>
+      <a href="BMCR12.htm">BMCR12</a>
+      <a href="BMCR13.htm">BMCR13</a>
+      <a href="BMCR14.htm">BMCR14</a>
+      <a href="BMCR15.htm">BMCR15</a>
+      <a href="BMCR16.htm">BMCR16</a>
+      <a href="BMCR17.htm">BMCR17</a>
+      <a href="BMCR18.htm">BMCR18</a>
+      <a href="BMCR19.htm">BMCR19</a>
+      <a href="BMCR20.htm">BMCR20</a>
+      <a href="BMCR21.htm">BMCR21</a>
+      <a href="BMCR22.htm">BMCR22</a>
+      <a href="BMCR23.htm">BMCR23</a>
+      <a href="BMCR24.htm">BMCR24</a>
+      <a href="BMCR25.htm">BMCR25</a>  
+      <br><br><br>  
+    </aside> 
+
+    <div class="content">  
+     
+      <div class="header"><br>&nbsp
+       <b>Kod salah :</b> 
+        BMCR01 <!--Error code number-->
+        <span style="float : right">
+          <b>Mesej Penggera :</b>
+          Hentian kecemasan &nbsp <!--Alarm Message-->
+        </span>
+       </div>
+
+    <p calss="description"> 
+    <b><u>Penerangan Penggera</u></b><br>
+    Butang tekan Berhenti Kecemasan yang ditekan pada konsol atau PLC tidak menerima isyarat tertutup kecemasan. Semak input X20 pada Kad Input-1.</p>
+    
+    
+    
+    <b ><u>Sebab & Ubat</u></b> <br><br>
+
+    <div class="reason1">
+    1.Butang tekan henti kecemasan (pada panel operator atau berhampiran unit tebukan) ditekan.<br>
+    &nbsp &nbsp	 <img src = "/HTML/Help_Images_BMAX/Downarrow.png" alt = " >>" width="50" length="50">
+    a. Putar butang tekan henti kecemasan mengikut arah jam untuk membuka kunci dan menetapkannya semula.<br>
+
+       
+   
+    <!--image location and size-->
+    <center>
+    &nbsp<img src = "/HTML/Help_Images_BMAX/EmergencyLocation.gif"  alt = " emergency stop switch Location" width="1000" height="483"><br>
+    (Lokasi Kecemasan)<br> <!--Image title-->
+    <img src="/HTML/Help_Images_BMAX/EmergencyConsoleJPG.JPG" width="250" height="300">
+    
+    &nbsp<img src = "/HTML/Help_Images_BMAX/Emergency.gif" alt = " emergency stop switch" width="200" length="200"> <br>
+    (Pelepasan Suis Kecemasan)
+   </center><br> 
+  </div>
+    
+    <div class="reason2">
+    2. Pendawaian input longgar atau rosak.<br>
+    &nbsp &nbsp	 <img src = "/HTML/Help_Images_BMAX/Downarrow.png" alt = " >>" width="50" length="50">   
+    a. Periksa pendawaian dari input ke PLC dan ambil tindakan pembetulan.<br>
+    <center>
+      &nbsp<img src = "/HTML/Help_Images_BMAX/EmergencyNC.JPG" alt = " emergency stop switch"  width="400" length="300" ><br>      
+      (Suis Kecemasan NC Contact)
+      <br>
+    </center>
+  </div>
+    <div class="reason1">
+    3. Kenalan NC butang tekan berhenti kecemasan tidak berfungsi.<br>
+    &nbsp &nbsp	 <img src = "/HTML/Help_Images_BMAX/Downarrow.png" alt = " >>" width="50" length="50">  
+    a. Periksa sesentuh NC butang tekan henti kecemasan dan gantikannya jika ia rosak.</div>
+
+    <div class="reason2">
+      4.Sambungan longgar pada penyentuh.(rujuk gambarajah elektrik).
+    </div>
+    <center>        
+        &nbsp<img src = "/HTML/Help_Images_BMAX/EmergencyNC.JPG" alt = " emergency stop switch"  width="400" length="300" ><br>      
+        (Suis Kecemasan NC Contact)<br>
+    </center>
+  </div>
+  <br><br><br>
+   <center>
+    Pendawaian suis kecemasan (Lukisan Elektrik No. Halaman:21)
+  </center>
+  <img src="/HTML/Help_Images_BMAX/EmergencyConsoleWiring.gif">
+    
+  <br><br><br>
+
+
+
+<hr width="98%"  size="5" color="LightGray" >
+<div class="footer1">
+    Penyelesaian Masalah Mesin BMAX Plus  <!--machine model name-->
+    <div class="footer2" >
+        Untuk Sokongan mel kami dengan Kod penggera pada : acg-mail.com <!--Email Id to contact-->
+    </div> 
+</div>
+</p>
+<br>
+</div>
+
+</span>
+</BODY>
+</HTML>

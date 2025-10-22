@@ -1,0 +1,11 @@
+{
+  "code": "MAJORALARM",
+  "category": "MAJORALARM",
+  "title": "Major Alarms",
+  "alarm_message": "",
+  "description": "",
+  "reasons_remedies": [],
+  "media": [],
+  "text_for_embedding": "Error Code MAJORALARM\nError Code MAJORALARM\nCategory: MAJORALARM\nTitle: Major Alarms",
+  "notes": ""
+}

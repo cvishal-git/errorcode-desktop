@@ -1,0 +1,46 @@
+{
+  "code": "BMCR05",
+  "category": "BMCR",
+  "title": "BMCR05",
+  "alarm_message": "Chiller High Temperature",
+  "description": "Temperature of inlet water form chiller is greater than set cut-off limit.",
+  "reasons_remedies": [
+    "The temperature of the chilled water supply is high than the set temperature.",
+    "On the Home screen, check the actual temperature and set cut-off temperature for the chilled water supply in basic cam.",
+    "Acutal temperature should be less that cut-off temperatre.",
+    "Adjust the temperature of the chilled water supply as per requirement.",
+    "? Refer to \"Setting Chart\"",
+    "Check whether the chilled water supply compressor is functional.",
+    "Thermocouple loose connection or faulty.",
+    "Check whter thermocouple connector is connected properly.",
+    "Check if the thermocouple is faulty. if so replace.",
+    "Temperature card.",
+    "Looses connection on temperatre card. Not sloved after above check points >> Temperatre card might be faulty."
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/chillerScreen.png",
+      "type": "png",
+      "caption": "Chiller Trmp Onscreen",
+      "tags": [
+        "chiller",
+        "trmp",
+        "onscreen",
+        "chillerscreen"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/chillerScreen2.png",
+      "type": "png",
+      "caption": "Chiller Trmp Onscreen",
+      "tags": [
+        "chiller",
+        "trmp",
+        "onscreen",
+        "chillerscreen"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMCR05\nError Code 05\nCategory: BMCR\nTitle: BMCR05\nAlarm Message: Chiller High Temperature\nDescription: Temperature of inlet water form chiller is greater than set cut-off limit.\nReason & Remedy:\n1. The temperature of the chilled water supply is high than the set temperature.\n2. On the Home screen, check the actual temperature and set cut-off temperature for the chilled water supply in basic cam.\n3. Acutal temperature should be less that cut-off temperatre.\n4. Adjust the temperature of the chilled water supply as per requirement.\n5. ? Refer to \"Setting Chart\"\n6. Check whether the chilled water supply compressor is functional.\n7. Thermocouple loose connection or faulty.\n8. Check whter thermocouple connector is connected properly.\n9. Check if the thermocouple is faulty. if so replace.\n10. Temperature card.\n11. Looses connection on temperatre card. Not sloved after above check points >> Temperatre card might be faulty.\nVisual References:\n- Chiller Trmp Onscreen\n- Chiller Trmp Onscreen",
+  "notes": ""
+}

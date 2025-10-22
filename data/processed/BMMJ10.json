@@ -1,0 +1,40 @@
+{
+  "code": "BMMJ10",
+  "category": "BMMJ",
+  "title": "BMMJ10",
+  "alarm_message": "Indexing Fault",
+  "description": "This alarm occurs if Web is slipped form indexing drum and indexing sensor is sensed.",
+  "reasons_remedies": [
+    "The indexing sensor gets on due to web slippage from the indexing roller.",
+    "Check web slippage from the indexing roller and insert it properly into the punching unit.",
+    "Check if the indexing sensor gets on by touching the object.",
+    "Set indexing sensor if needed.",
+    "ïƒ¨ Refer to Chapter \"Maintenance\" > Section \"Setting the Inductive Sensor.\""
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/IndexingFaultLoc.png",
+      "type": "png",
+      "caption": "Indexing Fault Sensor",
+      "tags": [
+        "indexing",
+        "fault",
+        "sensor",
+        "indexingfaultloc"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/IndexingFaultSensor.JPG",
+      "type": "jpg",
+      "caption": "Indexing Fault Sensor",
+      "tags": [
+        "indexing",
+        "fault",
+        "sensor",
+        "indexingfaultsensor"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMMJ10\nError Code 10\nCategory: BMMJ\nTitle: BMMJ10\nAlarm Message: Indexing Fault\nDescription: This alarm occurs if Web is slipped form indexing drum and indexing sensor is sensed.\nReason & Remedy:\n1. The indexing sensor gets on due to web slippage from the indexing roller.\n2. Check web slippage from the indexing roller and insert it properly into the punching unit.\n3. Check if the indexing sensor gets on by touching the object.\n4. Set indexing sensor if needed.\n5. ïƒ¨ Refer to Chapter \"Maintenance\" > Section \"Setting the Inductive Sensor.\"\nVisual References:\n- Indexing Fault Sensor\n- Indexing Fault Sensor",
+  "notes": ""
+}

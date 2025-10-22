@@ -1,0 +1,14 @@
+{
+  "code": "BMMI05",
+  "category": "BMMI",
+  "title": "BMMI05",
+  "alarm_message": "Empty Blister Count Over",
+  "description": "Empty Blister Count Over",
+  "reasons_remedies": [
+    "Empty Blister Count Over value is not set.",
+    "Enter the correct value for Empty Blister Count Over in Cyclic cam window."
+  ],
+  "media": [],
+  "text_for_embedding": "Error Code BMMI05\nError Code 05\nCategory: BMMI\nTitle: BMMI05\nAlarm Message: Empty Blister Count Over\nDescription: Empty Blister Count Over\nReason & Remedy:\n1. Empty Blister Count Over value is not set.\n2. Enter the correct value for Empty Blister Count Over in Cyclic cam window.",
+  "notes": ""
+}

@@ -1,0 +1,16 @@
+{
+  "code": "BMAT01",
+  "category": "BMAT",
+  "title": "BMAT01",
+  "alarm_message": "Camera System not Ready",
+  "description": "",
+  "reasons_remedies": [
+    "The camera is not ready. a. Check if the camera is ready for blister inspection to start with the camera monitor screen.",
+    "The signal is not coming from the camera. a. Check the signal coming from the camera and take corrective action.",
+    "The Camera key is off. a. On the Camera screen, tap the Camera key to start the function of the camera.",
+    "You can view the reference image [here](https://pharma-knowledge-kb.s3.us-east-2.amazonaws.com/document/Help_Images_BMAX/CameraLoc.png)"
+  ],
+  "media": [],
+  "text_for_embedding": "Error Code BMAT01\nError Code 01\nCategory: BMAT\nTitle: BMAT01\nAlarm Message: Camera System not Ready\nReason & Remedy:\n1. The camera is not ready. a. Check if the camera is ready for blister inspection to start with the camera monitor screen.\n2. The signal is not coming from the camera. a. Check the signal coming from the camera and take corrective action.\n3. The Camera key is off. a. On the Camera screen, tap the Camera key to start the function of the camera.\n4. You can view the reference image [here](https://pharma-knowledge-kb.s3.us-east-2.amazonaws.com/document/Help_Images_BMAX/CameraLoc.png)",
+  "notes": ""
+}

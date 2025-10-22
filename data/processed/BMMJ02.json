@@ -1,0 +1,37 @@
+{
+  "code": "BMMJ02",
+  "category": "BMMJ",
+  "title": "BMMJ02",
+  "alarm_message": "PLC SCADA Communiaction Failed",
+  "description": "PLC communication cable disconnected or PLC is in error mode.",
+  "reasons_remedies": [
+    "The communication between the PLC and the operator panel gets disconnected.",
+    "Check that the communication cable is connected correctly.",
+    "Check if the PLC and the operator panel communication port are working correctly.\"",
+    "Reset the alarm after appropriate remedies.",
+    "(Communication Cable Location)"
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/Panel_Open.gif",
+      "type": "gif",
+      "caption": "",
+      "tags": [
+        "panel",
+        "open"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/CommCable.jpg",
+      "type": "jpg",
+      "caption": "Communication Cable",
+      "tags": [
+        "communication",
+        "cable",
+        "commcable"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMMJ02\nError Code 02\nCategory: BMMJ\nTitle: BMMJ02\nAlarm Message: PLC SCADA Communiaction Failed\nDescription: PLC communication cable disconnected or PLC is in error mode.\nReason & Remedy:\n1. The communication between the PLC and the operator panel gets disconnected.\n2. Check that the communication cable is connected correctly.\n3. Check if the PLC and the operator panel communication port are working correctly.\"\n4. Reset the alarm after appropriate remedies.\n5. (Communication Cable Location)\nVisual References:\n- Communication Cable",
+  "notes": ""
+}

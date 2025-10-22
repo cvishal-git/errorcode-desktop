@@ -1,0 +1,17 @@
+{
+  "code": "BMMJ04",
+  "category": "BMMJ",
+  "title": "BMMJ04",
+  "alarm_message": "No Virtual Mode Servo System Not Ready",
+  "description": "Machine Servo system is in errro mode and not ready for homming. Check on servo drive for any error.",
+  "reasons_remedies": [
+    "Machine Servo not in Virtual Mode.",
+    "The machine drives are not at their home position or not in the correct mode.",
+    "Check if there is ny error in Servo drives.",
+    "Check the error on the drive and set it by referring to the servo manual.",
+    "Reset the alarm after appropriate remedies."
+  ],
+  "media": [],
+  "text_for_embedding": "Error Code BMMJ04\nError Code 04\nCategory: BMMJ\nTitle: BMMJ04\nAlarm Message: No Virtual Mode Servo System Not Ready\nDescription: Machine Servo system is in errro mode and not ready for homming. Check on servo drive for any error.\nReason & Remedy:\n1. Machine Servo not in Virtual Mode.\n2. The machine drives are not at their home position or not in the correct mode.\n3. Check if there is ny error in Servo drives.\n4. Check the error on the drive and set it by referring to the servo manual.\n5. Reset the alarm after appropriate remedies.\nNotes:\nWhen any of the following alarms has occurred, do not cycle the power repeatedly to restart. Doing so will cause a malfunction of the servo amplifier and servo motor. Remove its cause and allow about 30 minutes for cooling before resuming the operation. * [AL. 30 Regenerative error] * [AL. 45 Main circuit device overheat] * [AL. 46 Servo motor overheat] * [AL. 50 Overload 1] * [AL. 51 Overload 2] * [AL. 37 Parameter error] is not recorded in the alarm history",
+  "notes": "When any of the following alarms has occurred, do not cycle the power repeatedly to restart. Doing so will cause a malfunction of the servo amplifier and servo motor. Remove its cause and allow about 30 minutes for cooling before resuming the operation. * [AL. 30 Regenerative error] * [AL. 45 Main circuit device overheat] * [AL. 46 Servo motor overheat] * [AL. 50 Overload 1] * [AL. 51 Overload 2] * [AL. 37 Parameter error] is not recorded in the alarm history"
+}

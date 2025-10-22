@@ -1,0 +1,120 @@
+paths:
+  data_root: '/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA-Desktop/data'
+  raw_html: '/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA-Desktop/data/raw'
+  processed_json: '/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA-Desktop/data/processed'
+  media: '/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA-Desktop/data/media'
+  models: '/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA-Desktop/models'
+  database: '/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA-Desktop/database'
+
+models:
+  embedding_model: 'nomic-ai/nomic-embed-text-v1.5'
+  embedding_dir: 'nomic-embed-text'
+  embedding_dimensions: 768
+  llm_dir: 'qwen-2.5-3b'
+  llm_gguf_filename: 'qwen2.5-3b-instruct-q4_k_m.gguf'
+  llm_name: 'Qwen 2.5-3B'
+  llm_parameters: '3B'
+  llm_quantization: 'Q4_K_M'
+  llm_repo_url: 'https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF/resolve/main/'
+  llm_min_bytes: 200000000
+
+# Configuration presets - optimized for semantic chunking
+presets:
+  instant:
+    name: 'Instant (3s)'
+    description: 'Lightning fast, direct answers'
+    llm:
+      n_ctx: 512
+      n_threads: 6
+      n_batch: 64
+      temperature: 0.1
+      top_p: 0.9
+      repeat_penalty: 1.1
+      max_tokens: 200
+    rag:
+      chunk_size: 200
+      chunk_overlap: 20
+      max_context_tokens: 400
+      top_k: 2
+      hybrid_weight_text: 0.5
+      hybrid_weight_bm25: 0.5
+
+  fast:
+    name: 'Fast (5s)'
+    description: 'Quick responses with good detail'
+    llm:
+      n_ctx: 768
+      n_threads: 6
+      n_batch: 128
+      temperature: 0.15
+      top_p: 0.9
+      repeat_penalty: 1.1
+      max_tokens: 250
+    rag:
+      chunk_size: 300
+      chunk_overlap: 30
+      max_context_tokens: 600
+      top_k: 3
+      hybrid_weight_text: 0.5
+      hybrid_weight_bm25: 0.5
+
+  balanced:
+    name: 'Balanced (8s)'
+    description: 'Best mix of speed and quality'
+    llm:
+      n_ctx: 1024
+      n_threads: 8
+      n_batch: 256
+      temperature: 0.15
+      top_p: 0.9
+      repeat_penalty: 1.1
+      max_tokens: 300
+    rag:
+      chunk_size: 400
+      chunk_overlap: 40
+      max_context_tokens: 800
+      top_k: 4
+      hybrid_weight_text: 0.5
+      hybrid_weight_bm25: 0.5
+
+  quality:
+    name: 'Quality (15s)'
+    description: 'Detailed answers, more context'
+    llm:
+      n_ctx: 1536
+      n_threads: 8
+      n_batch: 384
+      temperature: 0.2
+      top_p: 0.9
+      repeat_penalty: 1.1
+      max_tokens: 400
+    rag:
+      chunk_size: 600
+      chunk_overlap: 60
+      max_context_tokens: 1200
+      top_k: 5
+      hybrid_weight_text: 0.5
+      hybrid_weight_bm25: 0.5
+
+# Default configuration (balanced)
+llm:
+  n_ctx: 1024
+  n_threads: 8
+  n_batch: 256
+  temperature: 0.15
+  top_p: 0.9
+  repeat_penalty: 1.1
+  max_tokens: 300
+
+rag:
+  chunk_size: 400
+  chunk_overlap: 40
+  max_context_tokens: 800
+  top_k: 4
+  hybrid_weight_text: 0.5
+  hybrid_weight_bm25: 0.5
+
+server:
+  host: '0.0.0.0'
+  port: 7860
+  share: false

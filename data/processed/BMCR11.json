@@ -1,0 +1,41 @@
+{
+  "code": "BMCR11",
+  "category": "BMCR",
+  "title": "BMCR11",
+  "alarm_message": "Forming Bottom High Temperature",
+  "description": "Actual temperature is higher than set high band limit.(High Band limit = Set temperature + High band)",
+  "reasons_remedies": [
+    "The temperature of the bottom heating plate is high (20 0C more than the set temperature).",
+    "Check the temperature set for the bottom heating plate.",
+    "Check the band value set for the bottom heating plate.",
+    "Check the temperature sensor of the bottom heating plate.",
+    "The heater is on continuously.",
+    "Check functioning of Solid State Relay (S.S. R).",
+    "Check with multimeter if SSR is giving output in off State. Replace SSR if output is avaliable in off state.",
+    "Check if thermocouple is connected properly.",
+    "PID parameters.",
+    "Check if the deafult PID parameters are shown on machine as per below image."
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/PID.png",
+      "type": "png",
+      "caption": "Sealing screen",
+      "tags": [
+        "sealing",
+        "screen",
+        "pid"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/FormBot.png",
+      "type": "png",
+      "caption": "",
+      "tags": [
+        "formbot"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMCR11\nError Code 11\nCategory: BMCR\nTitle: BMCR11\nAlarm Message: Forming Bottom High Temperature\nDescription: Actual temperature is higher than set high band limit.(High Band limit = Set temperature + High band)\nReason & Remedy:\n1. The temperature of the bottom heating plate is high (20 0C more than the set temperature).\n2. Check the temperature set for the bottom heating plate.\n3. Check the band value set for the bottom heating plate.\n4. Check the temperature sensor of the bottom heating plate.\n5. The heater is on continuously.\n6. Check functioning of Solid State Relay (S.S. R).\n7. Check with multimeter if SSR is giving output in off State. Replace SSR if output is avaliable in off state.\n8. Check if thermocouple is connected properly.\n9. PID parameters.\n10. Check if the deafult PID parameters are shown on machine as per below image.\nVisual References:\n- Sealing screen",
+  "notes": ""
+}

@@ -1,0 +1,52 @@
+{
+  "code": "BMCR18",
+  "category": "BMCR",
+  "title": "BMCR18",
+  "alarm_message": "Sealing Station Unlock Fail",
+  "description": "Sealing Station locking cylinder failed to open completely when machine was stoped.",
+  "reasons_remedies": [
+    "The sealing unit locking cylinders are not operated. The read switches are not operated for the sealing unit lock confirmation.",
+    "Check and confirm the read switch is on.",
+    "Check and confirm no obstacle in the cylinder movement and correct alignment."
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/SealUnlock1.JPG",
+      "type": "jpg",
+      "caption": "sealing Station Top Cylinder",
+      "tags": [
+        "sealing",
+        "station",
+        "top",
+        "cylinder",
+        "sealunlock"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/SealUnlock2.JPG",
+      "type": "jpg",
+      "caption": "sealing Station Top Cylinder",
+      "tags": [
+        "sealing",
+        "station",
+        "top",
+        "cylinder",
+        "sealunlock"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/SealUnlock3.JPG",
+      "type": "jpg",
+      "caption": "sealing Station Top Cylinder",
+      "tags": [
+        "sealing",
+        "station",
+        "top",
+        "cylinder",
+        "sealunlock"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMCR18\nError Code 18\nCategory: BMCR\nTitle: BMCR18\nAlarm Message: Sealing Station Unlock Fail\nDescription: Sealing Station locking cylinder failed to open completely when machine was stoped.\nReason & Remedy:\n1. The sealing unit locking cylinders are not operated. The read switches are not operated for the sealing unit lock confirmation.\n2. Check and confirm the read switch is on.\n3. Check and confirm no obstacle in the cylinder movement and correct alignment.\nVisual References:\n- sealing Station Top Cylinder\n- sealing Station Top Cylinder\n- sealing Station Top Cylinder",
+  "notes": ""
+}

@@ -1,0 +1,87 @@
+{
+  "code": "BMCR04",
+  "category": "BMCR",
+  "title": "BMCR04",
+  "alarm_message": "Low Air Pressure",
+  "description": "Inlet presure is below set limit or PLC is not receiving signal for presure switch. Check input X23 on Input Card-1. Reason & Remedy",
+  "reasons_remedies": [
+    "The air pressure goes below 4 bar or less than the set limit..",
+    "Activate compressed air supply.",
+    "No compressed air.",
+    "Check the pressure gauge.",
+    "(Pressure Gauge)",
+    "There is a leakage in the air pressure line.",
+    "Check the air pressure line for leakage.",
+    "Pressure switches are defective or set incorrectly.",
+    "Check the function and wiring of the pressure switch.",
+    "Teaching procedure",
+    "Set the Air pressure as required from regulator manually.",
+    "Press Edit button on sensor for 5 sec then light starts blinking and stop",
+    "It will set given pressure as Set pressure",
+    "(Pressure Switch)",
+    "The wire breaks in the cabling of the pressure controller.",
+    "Check electrical wiring.(refere electrical diagram)",
+    "The air pressure was not released.",
+    "Check the FRL unit and valve.",
+    "Engage the valve to supply air to the machine through the air pressure switch.",
+    "(FRL Unit)",
+    "The required air pressure is not provided.",
+    "Check the incoming air compressor.",
+    "Check whether the incoming air supply compressor is working",
+    "Air pressure is avalible and above the set limit",
+    "If supplied air is as per requirement, check the air pressure switch for the input voltage to PLC. It should be 24V DC.",
+    "Check the Air pressure switch to see whether it is working."
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/FRL4.JPG",
+      "type": "jpg",
+      "caption": "Pressure Gauge",
+      "tags": [
+        "pressure",
+        "gauge",
+        "frl"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/PresureSwitch.JPG",
+      "type": "jpg",
+      "caption": "Pressure switch",
+      "tags": [
+        "pressure",
+        "switch",
+        "presureswitch"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/FRL3.JPG",
+      "type": "jpg",
+      "caption": "FRL unit",
+      "tags": [
+        "frl",
+        "unit"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/FRL&Gauge.png",
+      "type": "png",
+      "caption": "FRL and Pressure Gauge",
+      "tags": [
+        "frl",
+        "and",
+        "pressure",
+        "gauge"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/AirPressureWiring.gif",
+      "type": "gif",
+      "caption": "",
+      "tags": [
+        "airpressurewiring"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMCR04\nError Code 04\nCategory: BMCR\nTitle: BMCR04\nAlarm Message: Low Air Pressure\nDescription: Inlet presure is below set limit or PLC is not receiving signal for presure switch. Check input X23 on Input Card-1. Reason & Remedy\nReason & Remedy:\n1. The air pressure goes below 4 bar or less than the set limit..\n2. Activate compressed air supply.\n3. No compressed air.\n4. Check the pressure gauge.\n5. (Pressure Gauge)\n6. There is a leakage in the air pressure line.\n7. Check the air pressure line for leakage.\n8. Pressure switches are defective or set incorrectly.\n9. Check the function and wiring of the pressure switch.\n10. Teaching procedure\n11. Set the Air pressure as required from regulator manually.\n12. Press Edit button on sensor for 5 sec then light starts blinking and stop\n13. It will set given pressure as Set pressure\n14. (Pressure Switch)\n15. The wire breaks in the cabling of the pressure controller.\n16. Check electrical wiring.(refere electrical diagram)\n17. The air pressure was not released.\n18. Check the FRL unit and valve.\n19. Engage the valve to supply air to the machine through the air pressure switch.\n20. (FRL Unit)\n21. The required air pressure is not provided.\n22. Check the incoming air compressor.\n23. Check whether the incoming air supply compressor is working\n24. Air pressure is avalible and above the set limit\n25. If supplied air is as per requirement, check the air pressure switch for the input voltage to PLC. It should be 24V DC.\n26. Check the Air pressure switch to see whether it is working.\nVisual References:\n- Pressure Gauge\n- Pressure switch\n- FRL unit\n- FRL and Pressure Gauge",
+  "notes": ""
+}

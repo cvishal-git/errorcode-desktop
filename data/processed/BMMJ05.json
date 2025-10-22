@@ -1,0 +1,45 @@
+{
+  "code": "BMMJ05",
+  "category": "BMMJ",
+  "title": "BMMJ05",
+  "alarm_message": "Base Foil End",
+  "description": "Base Foil ended or base foil switch is not placed properly.",
+  "reasons_remedies": [
+    "The forming film end switch is activated.",
+    "The plunger roller is entered into the slot, and the end switch is activated while the Base foil is ended.",
+    "Check whether the forming film is finished.",
+    "Load new forming film reel if needed.",
+    "Join the new forming film with another forming film, which will be finished.",
+    "Insert new forming film reel on forming film mounting unit."
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/BaseFoilSwitchLoc.png",
+      "type": "png",
+      "caption": "Base Foil End Switch Location",
+      "tags": [
+        "base",
+        "foil",
+        "end",
+        "switch",
+        "location",
+        "basefoilswitchloc"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/BaseFoilSwitch2.JPG",
+      "type": "jpg",
+      "caption": "Base foil Mounting and switch Foil Location",
+      "tags": [
+        "base",
+        "foil",
+        "mounting",
+        "and",
+        "switch",
+        "basefoilswitch"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMMJ05\nError Code 05\nCategory: BMMJ\nTitle: BMMJ05\nAlarm Message: Base Foil End\nDescription: Base Foil ended or base foil switch is not placed properly.\nReason & Remedy:\n1. The forming film end switch is activated.\n2. The plunger roller is entered into the slot, and the end switch is activated while the Base foil is ended.\n3. Check whether the forming film is finished.\n4. Load new forming film reel if needed.\n5. Join the new forming film with another forming film, which will be finished.\n6. Insert new forming film reel on forming film mounting unit.\nVisual References:\n- Base Foil End Switch Location\n- Base foil Mounting and switch Foil Location",
+  "notes": ""
+}

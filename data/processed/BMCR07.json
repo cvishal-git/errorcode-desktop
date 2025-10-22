@@ -1,0 +1,34 @@
+{
+  "code": "BMCR07",
+  "category": "BMCR",
+  "title": "BMCR07",
+  "alarm_message": "Forming Top Low Temperature",
+  "description": "Actual temperature is lower than set low band limit. (Low Band limit = Set temperature - Low band)",
+  "reasons_remedies": [
+    "The temperature of the top heating plate is low (15 0C less than the set temperature).",
+    "Check the temperature set for the top heating plate.",
+    "Check the band value set for the top heating plate.",
+    "Parameters are OK but temperature not risnig.",
+    "Check if themocouple is connected to top heater plate properly.",
+    "Check if the SSR is switching on.",
+    "Check if Contactor is on.",
+    "Check the heater connection and check voltage during on condition at SSR output and Junction Box.",
+    "Check heater resistance.",
+    "PID parameters.",
+    "Check if the deafult PID parameters are shown on machine as per below image."
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/PID.png",
+      "type": "png",
+      "caption": "Sealing screen",
+      "tags": [
+        "sealing",
+        "screen",
+        "pid"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMCR07\nError Code 07\nCategory: BMCR\nTitle: BMCR07\nAlarm Message: Forming Top Low Temperature\nDescription: Actual temperature is lower than set low band limit. (Low Band limit = Set temperature - Low band)\nReason & Remedy:\n1. The temperature of the top heating plate is low (15 0C less than the set temperature).\n2. Check the temperature set for the top heating plate.\n3. Check the band value set for the top heating plate.\n4. Parameters are OK but temperature not risnig.\n5. Check if themocouple is connected to top heater plate properly.\n6. Check if the SSR is switching on.\n7. Check if Contactor is on.\n8. Check the heater connection and check voltage during on condition at SSR output and Junction Box.\n9. Check heater resistance.\n10. PID parameters.\n11. Check if the deafult PID parameters are shown on machine as per below image.\nVisual References:\n- Sealing screen",
+  "notes": ""
+}

@@ -1,0 +1,60 @@
+{
+  "code": "BMAT06",
+  "category": "BMAT",
+  "title": "BMAT06",
+  "alarm_message": "Rejected Blister on Conveyor Track 2",
+  "description": "",
+  "reasons_remedies": [
+    "Rejected blister sensed on conveyor.. a. Check if rejected blister are falling on conveyor.",
+    "Trims falling on conveyor. a. check if trims is falling on conveyor, adjust rejection shute to avoide trims in conveyor.",
+    "Sensor sensing the conveyor or blister droped on conveyor. a. Follow below teaching procedre to adjust the sensor range."
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/RVSLoc.png",
+      "type": "png",
+      "caption": "Camera System Location",
+      "tags": [
+        "camera",
+        "system",
+        "location",
+        "rvsloc"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/RVS2.jpg",
+      "type": "jpg",
+      "caption": "Camera System Location",
+      "tags": [
+        "camera",
+        "system",
+        "location",
+        "rvs"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/RVS3.jpg",
+      "type": "jpg",
+      "caption": "Camera System Location",
+      "tags": [
+        "camera",
+        "system",
+        "location",
+        "rvs"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/RVS4.jpg",
+      "type": "jpg",
+      "caption": "Camera System Location",
+      "tags": [
+        "camera",
+        "system",
+        "location",
+        "rvs"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMAT06\nError Code 06\nCategory: BMAT\nTitle: BMAT06\nAlarm Message: Rejected Blister on Conveyor Track 2\nReason & Remedy:\n1. Rejected blister sensed on conveyor.. a. Check if rejected blister are falling on conveyor.\n2. Trims falling on conveyor. a. check if trims is falling on conveyor, adjust rejection shute to avoide trims in conveyor.\n3. Sensor sensing the conveyor or blister droped on conveyor. a. Follow below teaching procedre to adjust the sensor range.\nVisual References:\n- Camera System Location\n- Camera System Location\n- Camera System Location\n- Camera System Location",
+  "notes": ""
+}

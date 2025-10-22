@@ -1,0 +1,24 @@
+{
+  "code": "ALARMTROBLESHOOTING",
+  "category": "ALARMTROBLESHOOTING",
+  "title": "Alarm Troubleshoting",
+  "alarm_message": "",
+  "description": "",
+  "reasons_remedies": [],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/BMAX.png",
+      "type": "png",
+      "caption": "BMAX Plus Machine Trouble shooting",
+      "tags": [
+        "bmax",
+        "plus",
+        "machine",
+        "trouble",
+        "shooting"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code ALARMTROBLESHOOTING\nError Code ALARMTROBLESHOOTING\nCategory: ALARMTROBLESHOOTING\nTitle: Alarm Troubleshoting\nVisual References:\n- BMAX Plus Machine Trouble shooting",
+  "notes": ""
+}

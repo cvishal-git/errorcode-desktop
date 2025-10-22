@@ -1,0 +1,38 @@
+{
+  "code": "BMAT08",
+  "category": "BMAT",
+  "title": "BMAT08",
+  "alarm_message": "Accepted Blister in Rejection Bin",
+  "description": "",
+  "reasons_remedies": [
+    "Accepted Blister sensed in Rejection bin. a. Check if accepted blister are falling in rejection bin.",
+    "Trims falling in rejecton bin. a. check if trims is falling in Rejection bin, adjust rejection shute to avoide trims.",
+    "Sensor faulty input . a. Follow below teaching procedre to adjust the sensor range."
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/RVSLoc.png",
+      "type": "png",
+      "caption": "Camera System Location",
+      "tags": [
+        "camera",
+        "system",
+        "location",
+        "rvsloc"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/RVS4.jpg",
+      "type": "jpg",
+      "caption": "Camera System Location",
+      "tags": [
+        "camera",
+        "system",
+        "location",
+        "rvs"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMAT08\nError Code 08\nCategory: BMAT\nTitle: BMAT08\nAlarm Message: Accepted Blister in Rejection Bin\nReason & Remedy:\n1. Accepted Blister sensed in Rejection bin. a. Check if accepted blister are falling in rejection bin.\n2. Trims falling in rejecton bin. a. check if trims is falling in Rejection bin, adjust rejection shute to avoide trims.\n3. Sensor faulty input . a. Follow below teaching procedre to adjust the sensor range.\nVisual References:\n- Camera System Location\n- Camera System Location",
+  "notes": ""
+}

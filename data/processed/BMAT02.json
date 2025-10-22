@@ -1,0 +1,26 @@
+{
+  "code": "BMAT02",
+  "category": "BMAT",
+  "title": "BMAT02",
+  "alarm_message": "Base Foil Pin Hole not Ready",
+  "description": "",
+  "reasons_remedies": [
+    "Pin Hole is not Ready/powered on. a. Check if the Pin Hole system is ready and powered on.",
+    "The ready signal is not coming from the pin hole system. a. Check the signal coming from the pin hole system and take corrective action."
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/PinHoleLoc.png",
+      "type": "png",
+      "caption": "Camera System Location",
+      "tags": [
+        "camera",
+        "system",
+        "location",
+        "pinholeloc"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMAT02\nError Code 02\nCategory: BMAT\nTitle: BMAT02\nAlarm Message: Base Foil Pin Hole not Ready\nReason & Remedy:\n1. Pin Hole is not Ready/powered on. a. Check if the Pin Hole system is ready and powered on.\n2. The ready signal is not coming from the pin hole system. a. Check the signal coming from the pin hole system and take corrective action.\nVisual References:\n- Camera System Location",
+  "notes": ""
+}

@@ -1,0 +1,43 @@
+{
+  "code": "BMCR14",
+  "category": "BMCR",
+  "title": "BMCR14",
+  "alarm_message": "PRC Out of Band",
+  "description": "PRC i-mark is sensed out of band for 5 consecutive times. PRC i-mark shoulbe be between 950 to 000 or 000 to 050 of machine position.",
+  "reasons_remedies": [
+    "The eye mark is not aligined properly within the required PRC band.",
+    "The distance between the two eye marks on the lidding foil is not as per the format drawing. Check the distance between six eye marks on the lidding foil using PRC scale.(Format to format eye mark should be considered for measurement).",
+    "Correct film and foil path to sense the eye mark by the scanner on every cycle.",
+    "Align the eye mark on the stroke of forming to sense it within the required PRC band.",
+    "TEye mark not sensed by sensor.",
+    "Teach PRC scanner.",
+    "ïƒ¨ Refer Chapter \"Maintenance\" > Section \"Setting the Print Registration Control Scanner\"",
+    "The entered PRC value is not correct for the appropriate PRC correction or PRC setting issue.",
+    "Enter accurate PRC values to maintain correct PRC correction or refer Below tutorial video to set the PRC."
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/PRCLocation.png",
+      "type": "png",
+      "caption": "PRC Sensor Location",
+      "tags": [
+        "prc",
+        "sensor",
+        "location",
+        "prclocation"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/PRCSensor.JPG",
+      "type": "jpg",
+      "caption": "PRC Sensor",
+      "tags": [
+        "prc",
+        "sensor",
+        "prcsensor"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMCR14\nError Code 14\nCategory: BMCR\nTitle: BMCR14\nAlarm Message: PRC Out of Band\nDescription: PRC i-mark is sensed out of band for 5 consecutive times. PRC i-mark shoulbe be between 950 to 000 or 000 to 050 of machine position.\nReason & Remedy:\n1. The eye mark is not aligined properly within the required PRC band.\n2. The distance between the two eye marks on the lidding foil is not as per the format drawing. Check the distance between six eye marks on the lidding foil using PRC scale.(Format to format eye mark should be considered for measurement).\n3. Correct film and foil path to sense the eye mark by the scanner on every cycle.\n4. Align the eye mark on the stroke of forming to sense it within the required PRC band.\n5. TEye mark not sensed by sensor.\n6. Teach PRC scanner.\n7. ïƒ¨ Refer Chapter \"Maintenance\" > Section \"Setting the Print Registration Control Scanner\"\n8. The entered PRC value is not correct for the appropriate PRC correction or PRC setting issue.\n9. Enter accurate PRC values to maintain correct PRC correction or refer Below tutorial video to set the PRC.\nVisual References:\n- PRC Sensor Location\n- PRC Sensor",
+  "notes": ""
+}

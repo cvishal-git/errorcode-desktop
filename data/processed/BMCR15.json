@@ -1,0 +1,50 @@
+{
+  "code": "BMCR15",
+  "category": "BMCR",
+  "title": "BMCR15",
+  "alarm_message": "Sealing Low Temperature",
+  "description": "Actual temperature is lower than set low band limit. (Low Band limit = Set temperature - Low band)",
+  "reasons_remedies": [
+    "The temperature of the top sealing plate is low (15 0C less than the set temperature).",
+    "Check the temperature set for the top sealing plate.",
+    "Check the band value set for the top sealing plate.",
+    "Sealing mechanical assembly.",
+    "Check the gap between heater and upper sealing plate.",
+    "Check the hilem sheet between heater and top cooling plate.",
+    "Ensure proper water flow.",
+    "Check the chiller temperature. Set it as per the format part and fil requirement.",
+    "Check if the air blow is connected.",
+    "Parameters are OK but temperature not risnig.",
+    "Check if themocouple is connected to top heater plate properly.",
+    "Check if the SSR is switching on.",
+    "Check if Contactor is on.",
+    "Check the heater connection and check voltage during on condition at SSR output and Junction Box.",
+    "Check heater resistance.",
+    "PID parameters.",
+    "Check if the deafult PID parameters are shown on machine as per below image."
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/PID.png",
+      "type": "png",
+      "caption": "Sealing screen",
+      "tags": [
+        "sealing",
+        "screen",
+        "pid"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/SealSRC.png",
+      "type": "png",
+      "caption": "Sealing screen",
+      "tags": [
+        "sealing",
+        "screen",
+        "sealsrc"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMCR15\nError Code 15\nCategory: BMCR\nTitle: BMCR15\nAlarm Message: Sealing Low Temperature\nDescription: Actual temperature is lower than set low band limit. (Low Band limit = Set temperature - Low band)\nReason & Remedy:\n1. The temperature of the top sealing plate is low (15 0C less than the set temperature).\n2. Check the temperature set for the top sealing plate.\n3. Check the band value set for the top sealing plate.\n4. Sealing mechanical assembly.\n5. Check the gap between heater and upper sealing plate.\n6. Check the hilem sheet between heater and top cooling plate.\n7. Ensure proper water flow.\n8. Check the chiller temperature. Set it as per the format part and fil requirement.\n9. Check if the air blow is connected.\n10. Parameters are OK but temperature not risnig.\n11. Check if themocouple is connected to top heater plate properly.\n12. Check if the SSR is switching on.\n13. Check if Contactor is on.\n14. Check the heater connection and check voltage during on condition at SSR output and Junction Box.\n15. Check heater resistance.\n16. PID parameters.\n17. Check if the deafult PID parameters are shown on machine as per below image.\nVisual References:\n- Sealing screen\n- Sealing screen",
+  "notes": ""
+}

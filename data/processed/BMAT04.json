@@ -1,0 +1,14 @@
+{
+  "code": "BMAT04",
+  "category": "BMAT",
+  "title": "BMAT04",
+  "alarm_message": "Pharma Code Error",
+  "description": "",
+  "reasons_remedies": [
+    "The ready signal is not coming from the Pharma Code system. a. Check the signal coming from the Pharma code system and take corrective action.",
+    "The camera for pharma code is not ready. a. Check if the camera is ready for pharma code inspection to start with the camera monitor screen."
+  ],
+  "media": [],
+  "text_for_embedding": "Error Code BMAT04\nError Code 04\nCategory: BMAT\nTitle: BMAT04\nAlarm Message: Pharma Code Error\nReason & Remedy:\n1. The ready signal is not coming from the Pharma Code system. a. Check the signal coming from the Pharma code system and take corrective action.\n2. The camera for pharma code is not ready. a. Check if the camera is ready for pharma code inspection to start with the camera monitor screen.",
+  "notes": ""
+}

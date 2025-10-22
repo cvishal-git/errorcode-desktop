@@ -1,0 +1,46 @@
+{
+  "code": "BMMJ08",
+  "category": "BMMJ",
+  "title": "BMMJ08",
+  "alarm_message": "Low Water Flow",
+  "description": "Low Water Flow detected in water flow switch. Reason & Remedy",
+  "reasons_remedies": [
+    "The chilled water supply is off while the machine is running.",
+    "Check the chilled water supply.",
+    "Switch on the chilled water supply if needed.\"",
+    "The setting of the water flow monitor is not correct.",
+    "Check the water flow monitor setting.",
+    "Set water flow monitor as per requirement.",
+    "? Refer to Chapter \"Maintenance\" > Section \"Setting the Water Flow Monitor.\"",
+    "The pressure switch is faulty.",
+    "Replace the pressure switch.",
+    "The dust accumulated inside the chilled water supply pipes.",
+    "Clean chilled water supply pipes.",
+    "Check water quality and take corrective action."
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/WaterFlow.jpg",
+      "type": "jpg",
+      "caption": "Waterflow sensor image",
+      "tags": [
+        "waterflow",
+        "sensor",
+        "image"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/WaterFlowSensor.JPG",
+      "type": "jpg",
+      "caption": "Waterflow sensor image",
+      "tags": [
+        "waterflow",
+        "sensor",
+        "image",
+        "waterflowsensor"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMMJ08\nError Code 08\nCategory: BMMJ\nTitle: BMMJ08\nAlarm Message: Low Water Flow\nDescription: Low Water Flow detected in water flow switch. Reason & Remedy\nReason & Remedy:\n1. The chilled water supply is off while the machine is running.\n2. Check the chilled water supply.\n3. Switch on the chilled water supply if needed.\"\n4. The setting of the water flow monitor is not correct.\n5. Check the water flow monitor setting.\n6. Set water flow monitor as per requirement.\n7. ? Refer to Chapter \"Maintenance\" > Section \"Setting the Water Flow Monitor.\"\n8. The pressure switch is faulty.\n9. Replace the pressure switch.\n10. The dust accumulated inside the chilled water supply pipes.\n11. Clean chilled water supply pipes.\n12. Check water quality and take corrective action.\nVisual References:\n- Waterflow sensor image\n- Waterflow sensor image",
+  "notes": ""
+}

@@ -1,0 +1,34 @@
+{
+  "code": "BMCR06",
+  "category": "BMCR",
+  "title": "BMCR06",
+  "alarm_message": "Heater Key Off",
+  "description": "Heater key is turned off form configuration key. High Temperature alarm occured on machine or thermocouple is disconnected.",
+  "reasons_remedies": [
+    "The Heater key is off.",
+    "On the Basic screen, tap the Heater key to activate the function of the heater.",
+    "The chilled water supply is not connected, or the chilled water supply gets switched off.",
+    "Check the chilled water supply and take corrective action",
+    "The set value and the actual value of heaters (forming unit, sealing unit, and perforation unit) are not correct.",
+    "Check whether the heater temperature exceeds the set band value limit (forming unit, sealing unit, and perforation unit).",
+    "Check for the other active alarms",
+    "Check if any of the below alarms are active and check there troubleshooting."
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/HeaterScree.png",
+      "type": "png",
+      "caption": "4. Check for the other active alarms a. Check if any of the below alarms are active and check there troubleshooting.",
+      "tags": [
+        "check",
+        "for",
+        "the",
+        "other",
+        "active",
+        "heaterscree"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMCR06\nError Code 06\nCategory: BMCR\nTitle: BMCR06\nAlarm Message: Heater Key Off\nDescription: Heater key is turned off form configuration key. High Temperature alarm occured on machine or thermocouple is disconnected.\nReason & Remedy:\n1. The Heater key is off.\n2. On the Basic screen, tap the Heater key to activate the function of the heater.\n3. The chilled water supply is not connected, or the chilled water supply gets switched off.\n4. Check the chilled water supply and take corrective action\n5. The set value and the actual value of heaters (forming unit, sealing unit, and perforation unit) are not correct.\n6. Check whether the heater temperature exceeds the set band value limit (forming unit, sealing unit, and perforation unit).\n7. Check for the other active alarms\n8. Check if any of the below alarms are active and check there troubleshooting.\nVisual References:\n- 4. Check for the other active alarms a. Check if any of the below alarms are active and check there troubleshooting.",
+  "notes": ""
+}

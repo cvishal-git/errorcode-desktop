@@ -1,0 +1,77 @@
+{
+  "code": "BMCR02",
+  "category": "BMCR",
+  "title": "BMCR02",
+  "alarm_message": "Emergency stop near Punching",
+  "description": "Emergency Stop push button pressed near punching station or PLC is not receiving emergency closed signal. Check input X21 on Input Card-1.",
+  "reasons_remedies": [
+    "The emergency stop push button (on the operator panel or near the punching unit) is pressed.",
+    "Turn the emergency stop push-button clockwise to unlock and reset it.",
+    "(Emergency Location)",
+    "(Emergency Switch Release)",
+    "The input wiring is loose or damaged.",
+    "Check wiring from input to PLC and take corrective action.",
+    "(Emergency Switch NC contact)",
+    "The emergency stop push-button NC contact is not functioning.",
+    "Check the emergency stop push-button NC contact and replace it if it is faulty.",
+    "Loose connection on contactor.(refer electrical diagram)"
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/EmergencyLocation.gif",
+      "type": "gif",
+      "caption": "emergency stop switch Location",
+      "tags": [
+        "emergency",
+        "stop",
+        "switch",
+        "location",
+        "emergencylocation"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/EmergencyPunching.JPG",
+      "type": "jpg",
+      "caption": "",
+      "tags": [
+        "emergencypunching"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/Emergency.gif",
+      "type": "gif",
+      "caption": "emergency stop switch",
+      "tags": [
+        "emergency",
+        "stop",
+        "switch"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/EmergencyNC.JPG",
+      "type": "jpg",
+      "caption": "emergency stop switch",
+      "tags": [
+        "emergency",
+        "stop",
+        "switch",
+        "emergencync"
+      ]
+    },
+    {
+      "path": "HTML/Help_Images_BMAX/EmergencyPnchingWiring.gif",
+      "type": "gif",
+      "caption": "Emergency switch Wiring (Electrical Drawing Page No:31)",
+      "tags": [
+        "emergency",
+        "switch",
+        "wiring",
+        "electrical",
+        "drawing",
+        "emergencypnchingwiring"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMCR02\nError Code 02\nCategory: BMCR\nTitle: BMCR02\nAlarm Message: Emergency stop near Punching\nDescription: Emergency Stop push button pressed near punching station or PLC is not receiving emergency closed signal. Check input X21 on Input Card-1.\nReason & Remedy:\n1. The emergency stop push button (on the operator panel or near the punching unit) is pressed.\n2. Turn the emergency stop push-button clockwise to unlock and reset it.\n3. (Emergency Location)\n4. (Emergency Switch Release)\n5. The input wiring is loose or damaged.\n6. Check wiring from input to PLC and take corrective action.\n7. (Emergency Switch NC contact)\n8. The emergency stop push-button NC contact is not functioning.\n9. Check the emergency stop push-button NC contact and replace it if it is faulty.\n10. Loose connection on contactor.(refer electrical diagram)\nVisual References:\n- emergency stop switch Location\n- emergency stop switch\n- emergency stop switch\n- Emergency switch Wiring (Electrical Drawing Page No:31)",
+  "notes": ""
+}

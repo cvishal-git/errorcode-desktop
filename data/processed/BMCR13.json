@@ -1,0 +1,25 @@
+{
+  "code": "BMCR13",
+  "category": "BMCR",
+  "title": "BMCR13",
+  "alarm_message": "Rejection Bin full",
+  "description": "Rejected blister collection bin is full.",
+  "reasons_remedies": [
+    "The blister-reject collection bin is full, and the respective sensor is on.",
+    "Empty blister-reject collection bin."
+  ],
+  "media": [
+    {
+      "path": "HTML/Help_Images_BMAX/RejectionBinLocation.png",
+      "type": "png",
+      "caption": "Rejection BinLocation",
+      "tags": [
+        "rejection",
+        "binlocation",
+        "rejectionbinlocation"
+      ]
+    }
+  ],
+  "text_for_embedding": "Error Code BMCR13\nError Code 13\nCategory: BMCR\nTitle: BMCR13\nAlarm Message: Rejection Bin full\nDescription: Rejected blister collection bin is full.\nReason & Remedy:\n1. The blister-reject collection bin is full, and the respective sensor is on.\n2. Empty blister-reject collection bin.\nVisual References:\n- Rejection BinLocation",
+  "notes": ""
+}
