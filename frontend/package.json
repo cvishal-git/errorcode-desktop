@@ -78,7 +78,6 @@
           ]
         }
       ],
-      "icon": "../build-resources/icon.ico",
       "artifactName": "${productName}-${version}-Setup.${ext}"
     },
     "nsis": {
@@ -87,9 +86,6 @@
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
       "shortcutName": "ErrorCodeQA",
-      "installerIcon": "../build-resources/icon.ico",
-      "uninstallerIcon": "../build-resources/icon.ico",
-      "license": "../LICENSE",
       "warningsAsErrors": false
     },
     "extraMetadata": {
