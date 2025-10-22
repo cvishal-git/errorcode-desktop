@@ -4,6 +4,10 @@
   "version": "1.0.0",
   "description": "Offline error code lookup system with AI-powered assistance",
   "author": "Your Name",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vishalchaudhary/errorcode-desktop.git"
+  },
   "private": true,
   "main": "src/main.js",
   "type": "module",
@@ -46,6 +50,7 @@
     "appId": "com.errorcode.qa",
     "productName": "ErrorCodeQA",
     "artifactName": "${productName}-${version}-${os}-${arch}.${ext}",
+    "publish": null,
     "directories": {
       "output": "dist-electron",
       "buildResources": "../build-resources"
