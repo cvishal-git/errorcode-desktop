@@ -90,15 +90,49 @@ function createWindow() {
     resizable: true,
   });
 
+  // Add error logging
+  mainWindow.webContents.on(
+    'did-fail-load',
+    (event, errorCode, errorDescription) => {
+      console.error('Failed to load:', errorCode, errorDescription);
+    },
+  );
+
+  mainWindow.webContents.on(
+    'console-message',
+    (event, level, message, line, sourceId) => {
+      console.log('Console:', message);
+    },
+  );
+
   if (isDev) {
     mainWindow.loadURL('http://localhost:5173');
-    // Comment out dev tools for cleaner look
-    // mainWindow.webContents.openDevTools();
+    mainWindow.webContents.openDevTools(); // Enable for debugging
   } else {
-    // In production, files are in app.asar or unpacked
-    const indexPath = path.join(__dirname, 'dist', 'index.html');
-    console.log('Loading index from:', indexPath);
-    mainWindow.loadFile(indexPath);
+    // In production, electron-builder packages files relative to app.getAppPath()
+    console.log('=== Production Mode Debug ===');
+    console.log('__dirname:', __dirname);
+    console.log('app.getAppPath():', app.getAppPath());
+    console.log('process.resourcesPath:', process.resourcesPath);
+
+    // The dist folder is packaged at the app root
+    const indexPath = path.join(app.getAppPath(), 'dist', 'index.html');
+    console.log('Index path:', indexPath);
+    console.log('Index exists:', fs.existsSync(indexPath));
+
+    mainWindow
+      .loadFile(indexPath)
+      .then(() => {
+        console.log('✅ Successfully loaded index.html');
+      })
+      .catch((err) => {
+        console.error('❌ Error loading file:', err);
+        // Fallback: try to load from URL if file loading fails
+        mainWindow.loadURL(`file://${indexPath}`);
+      });
+
+    // Open dev tools in production for debugging
+    mainWindow.webContents.openDevTools();
   }
 }
 
