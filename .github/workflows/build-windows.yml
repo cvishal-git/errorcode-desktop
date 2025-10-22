@@ -14,38 +14,38 @@ on:
 jobs:
   build-windows:
     runs-on: windows-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: 'pip'
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'yarn'
           cache-dependency-path: frontend/yarn.lock
-      
+
       - name: Install Python dependencies
         working-directory: backend
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install pyinstaller
-      
+
       - name: Build Python backend
         working-directory: backend
         run: |
           pyinstaller build.spec --clean --noconfirm
-      
+
       - name: Verify backend build
         working-directory: backend
         run: |
@@ -56,26 +56,26 @@ jobs:
             Write-Error "Backend executable not found!"
             exit 1
           }
-      
+
       - name: Install frontend dependencies
         working-directory: frontend
-        run: yarn install --frozen-lockfile
-      
+        run: yarn install
+
       - name: Build React frontend
         working-directory: frontend
         run: yarn build
-      
+
       - name: Build Electron app
         working-directory: frontend
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: yarn dist:win
-      
+
       - name: List build artifacts
         run: |
           Write-Host "=== Build Artifacts ==="
           Get-ChildItem -Path frontend/dist-electron -Recurse | Format-Table Name, Length
-      
+
       - name: Upload installer artifact
         uses: actions/upload-artifact@v4
         with:
@@ -84,24 +84,24 @@ jobs:
             frontend/dist-electron/*.exe
             frontend/dist-electron/*.yml
           retention-days: 30
-      
+
       - name: Create distribution package info
         run: |
           $version = "${{ github.event.inputs.version }}"
           if ([string]::IsNullOrEmpty($version)) {
             $version = "${{ github.ref_name }}".TrimStart('v')
           }
-          
+
           Write-Host "Creating distribution package for version $version"
-          
+
           $readmeContent = @"
           # ErrorCodeQA v$version - Windows Distribution
-          
+
           ## Installation Instructions
-          
+
           1. **Extract the archive**
              - Extract ErrorCodeQA-v$version.zip to a folder on your computer
-          
+
           2. **Required folder structure:**
              ```
              ErrorCodeQA/
@@ -112,49 +112,49 @@ jobs:
              └── database/                 (Copy these manually)
                  └── chromadb/
              ```
-          
+
           3. **Add models and database:**
              - Copy the `models/` folder to the same directory as ErrorCodeQA.exe
              - Copy the `database/` folder to the same directory as ErrorCodeQA.exe
-          
+
           4. **Run the application:**
              - Double-click ErrorCodeQA.exe
              - The backend will start automatically
              - Wait 2-3 seconds for the UI to appear
-          
+
           ## System Requirements
-          
+
           - Windows 10 or later (64-bit)
           - 8GB RAM minimum (16GB recommended)
           - 5GB free disk space (including models and database)
-          
+
           ## Troubleshooting
-          
+
           If the app doesn't start:
           1. Check that models/ and database/ folders are in the correct location
           2. Make sure you have enough disk space
           3. Try running as administrator
           4. Check Windows Defender hasn't blocked the app
-          
+
           ## Notes
-          
+
           - First launch may take 10-20 seconds as models load
           - All processing is done locally - no internet required
           - Models and database are NOT included in this installer due to size (2.5GB)
-          
+
           Built: $(Get-Date -Format "yyyy-MM-dd HH:mm:ss UTC")
           "@
-          
+
           Set-Content -Path "frontend/dist-electron/DISTRIBUTION-README.txt" -Value $readmeContent
           Write-Host "Distribution README created"
-      
+
       - name: Upload distribution readme
         uses: actions/upload-artifact@v4
         with:
           name: Distribution-Instructions
           path: frontend/dist-electron/DISTRIBUTION-README.txt
           retention-days: 30
-      
+
       - name: Create GitHub Release
         if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v1
@@ -166,32 +166,31 @@ jobs:
           generate_release_notes: true
           body: |
             ## ErrorCodeQA ${{ github.ref_name }}
-            
+
             ### Installation
-            
+
             1. Download the installer (.exe file)
             2. Run the installer
             3. **IMPORTANT**: Copy the `models/` and `database/` folders to the installation directory
             4. Launch ErrorCodeQA
-            
+
             ### What's Included
-            
+
             - ✅ Electron desktop application
             - ✅ Python backend (embedded)
             - ✅ React frontend (embedded)
-            
+
             ### What's NOT Included (Manual Setup Required)
-            
+
             - ❌ Models folder (2.5GB) - must be copied manually
             - ❌ Database folder - must be copied manually
-            
+
             See DISTRIBUTION-README.txt for detailed instructions.
-            
+
             ### System Requirements
-            
+
             - Windows 10+ (64-bit)
             - 8GB RAM minimum
             - 5GB free disk space
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
