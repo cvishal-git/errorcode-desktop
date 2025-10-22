@@ -65,7 +65,6 @@ a = Analysis(
     excludes=[
         # Exclude unnecessary packages to reduce size and build time
         'matplotlib',
-        'scipy',
         'pandas',
         'jupyter',
         'notebook',
