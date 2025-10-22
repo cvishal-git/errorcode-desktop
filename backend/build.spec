@@ -63,18 +63,27 @@ a = Analysis(
     hooksconfig={},
     runtime_hooks=[],
     excludes=[
-        # Exclude unnecessary packages to reduce size
+        # Exclude unnecessary packages to reduce size and build time
         'matplotlib',
         'scipy',
         'pandas',
         'jupyter',
         'notebook',
         'IPython',
+        'pytest',
+        'sphinx',
+        'setuptools',
+        'wheel',
+        'pip',
+        'distutils',
     ],
     win_no_prefer_redirects=False,
     win_private_assemblies=False,
     cipher=block_cipher,
     noarchive=False,
+    module_collection_mode={
+        'torch': 'py',  # Don't collect torch .so files we don't need
+    },
 )
 
 pyz = PYZ(a.pure, a.zipped_data, cipher=block_cipher)
