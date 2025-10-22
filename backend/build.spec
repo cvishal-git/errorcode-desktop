@@ -11,21 +11,11 @@ from pathlib import Path
 
 block_cipher = None
 
-# Collect all backend files (only non-empty directories)
-import os
-backend_files = []
-
-# Add api module
-if os.path.exists('api') and os.listdir('api'):
-    backend_files.append(('api/*.py', 'api'))
-
-# Add engine module  
-if os.path.exists('engine') and os.listdir('engine'):
-    backend_files.append(('engine/*.py', 'engine'))
-
-# Add utils module if it has files
-if os.path.exists('utils') and any(f.endswith('.py') for f in os.listdir('utils')):
-    backend_files.append(('utils/*.py', 'utils'))
+# Collect all backend files
+backend_files = [
+    ('api/*.py', 'api'),
+    ('engine/*.py', 'engine'),
+]
 
 # Hidden imports for ML libraries that PyInstaller might miss
 hidden_imports = [
