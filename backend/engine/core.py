@@ -54,7 +54,14 @@ def load_config(project_root: Path) -> Dict[str, Any]:
     """Load configuration from config.yaml."""
     cfg_path = project_root / "config.yaml"
     with open(cfg_path, "r", encoding="utf-8") as f:
-        return yaml.safe_load(f)
+        cfg = yaml.safe_load(f)
+    
+    # Convert relative paths to absolute paths based on project_root
+    for key, value in cfg.get("paths", {}).items():
+        if value and not Path(value).is_absolute():
+            cfg["paths"][key] = str(project_root / value)
+    
+    return cfg
 
 
 def load_error_code_cache(project_root: Path) -> Dict[str, Dict]:

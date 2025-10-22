@@ -1,14 +1,20 @@
 {
-  "name": "frontend",
+  "name": "error-code-qa",
+  "productName": "ErrorCodeQA",
+  "version": "1.0.0",
+  "description": "Offline error code lookup system with AI-powered assistance",
+  "author": "Your Name",
   "private": true,
-  "version": "0.0.0",
   "main": "src/main.js",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "electron:dev": "concurrently \"cross-env BROWSER=none vite\" \"wait-on http://localhost:5173 && electron .\"",
-    "electron:build": "npm run build && electron-builder"
+    "electron:build": "npm run build && electron-builder",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "dist:win": "electron-builder --win"
   },
   "dependencies": {
     "axios": "^1.12.2",
@@ -35,5 +41,54 @@
     "tailwindcss": "^4.1.15",
     "vite": "^7.1.7",
     "wait-on": "^9.0.1"
+  },
+  "build": {
+    "appId": "com.errorcode.qa",
+    "productName": "ErrorCodeQA",
+    "artifactName": "${productName}-${version}-${os}-${arch}.${ext}",
+    "directories": {
+      "output": "dist-electron",
+      "buildResources": "../build-resources"
+    },
+    "files": [
+      "dist/**/*",
+      "src/main.js",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "../backend/dist/backend",
+        "to": "backend",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "../build-resources/icon.ico",
+      "artifactName": "${productName}-${version}-Setup.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "ErrorCodeQA",
+      "installerIcon": "../build-resources/icon.ico",
+      "uninstallerIcon": "../build-resources/icon.ico",
+      "license": "../LICENSE",
+      "warningsAsErrors": false
+    },
+    "extraMetadata": {
+      "main": "src/main.js"
+    }
   }
 }

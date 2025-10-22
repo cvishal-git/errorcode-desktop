@@ -2623,6 +2623,35 @@ __metadata:
   languageName: node
   linkType: hard
 
+"error-code-qa@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "error-code-qa@workspace:."
+  dependencies:
+    "@eslint/js": "npm:^9.36.0"
+    "@tailwindcss/postcss": "npm:^4.1.15"
+    "@types/react": "npm:^19.1.16"
+    "@types/react-dom": "npm:^19.1.9"
+    "@vitejs/plugin-react": "npm:^5.0.4"
+    autoprefixer: "npm:^10.4.21"
+    axios: "npm:^1.12.2"
+    concurrently: "npm:^9.2.1"
+    cross-env: "npm:^10.1.0"
+    electron: "npm:^38.3.0"
+    electron-builder: "npm:26.0.12"
+    eslint: "npm:^9.36.0"
+    eslint-plugin-react-hooks: "npm:^5.2.0"
+    eslint-plugin-react-refresh: "npm:^0.4.22"
+    globals: "npm:^16.4.0"
+    postcss: "npm:^8.5.6"
+    react: "npm:^19.1.1"
+    react-dom: "npm:^19.1.1"
+    react-markdown: "npm:^10.1.0"
+    tailwindcss: "npm:^4.1.15"
+    vite: "npm:^7.1.7"
+    wait-on: "npm:^9.0.1"
+  languageName: unknown
+  linkType: soft
+
 "es-define-property@npm:^1.0.0, es-define-property@npm:^1.0.1":
   version: 1.0.1
   resolution: "es-define-property@npm:1.0.1"
@@ -3073,35 +3102,6 @@ __metadata:
   checksum: 10c0/df291391beea9ab4c263487ffd9d17fed162dbb736982dee1379b2a8cc94e4e24e46ed508c6d278aded9080ba51872f1bc5f3a5fd8d7c74e5f105b508ac28711
   languageName: node
   linkType: hard
-
-"frontend@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "frontend@workspace:."
-  dependencies:
-    "@eslint/js": "npm:^9.36.0"
-    "@tailwindcss/postcss": "npm:^4.1.15"
-    "@types/react": "npm:^19.1.16"
-    "@types/react-dom": "npm:^19.1.9"
-    "@vitejs/plugin-react": "npm:^5.0.4"
-    autoprefixer: "npm:^10.4.21"
-    axios: "npm:^1.12.2"
-    concurrently: "npm:^9.2.1"
-    cross-env: "npm:^10.1.0"
-    electron: "npm:^38.3.0"
-    electron-builder: "npm:26.0.12"
-    eslint: "npm:^9.36.0"
-    eslint-plugin-react-hooks: "npm:^5.2.0"
-    eslint-plugin-react-refresh: "npm:^0.4.22"
-    globals: "npm:^16.4.0"
-    postcss: "npm:^8.5.6"
-    react: "npm:^19.1.1"
-    react-dom: "npm:^19.1.1"
-    react-markdown: "npm:^10.1.0"
-    tailwindcss: "npm:^4.1.15"
-    vite: "npm:^7.1.7"
-    wait-on: "npm:^9.0.1"
-  languageName: unknown
-  linkType: soft
 
 "fs-extra@npm:^10.0.0, fs-extra@npm:^10.1.0":
   version: 10.1.0

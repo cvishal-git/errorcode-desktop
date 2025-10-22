@@ -1,26 +1,69 @@
 const { app, BrowserWindow } = require('electron');
 const { spawn } = require('child_process');
 const path = require('path');
+const fs = require('fs');
 
 const isDev = !app.isPackaged;
 let mainWindow = null;
 let pythonProcess = null;
 
+function getAppRoot() {
+  // In production, app root is where the .exe is located
+  // In dev, it's the project root
+  if (isDev) {
+    return path.join(__dirname, '../..');
+  }
+  
+  // Production: exe is in resources/app.asar or resources/app
+  // We want to go to the directory containing the .exe
+  return path.dirname(app.getPath('exe'));
+}
+
 function startPython() {
-  const pythonPath = isDev
-    ? 'python3'
-    : path.join(process.resourcesPath, 'backend', 'server.exe');
-  const scriptPath = isDev
-    ? path.join(__dirname, '../../backend/server.py')
-    : '';
-  const args = isDev ? [scriptPath, '--port', '8000'] : ['--port', '8000'];
+  const appRoot = getAppRoot();
+  
+  let pythonPath, pythonArgs, cwd;
+  
+  if (isDev) {
+    // Development mode: use system Python
+    pythonPath = process.platform === 'win32' ? 'python' : 'python3';
+    const scriptPath = path.join(__dirname, '../../backend/server.py');
+    pythonArgs = [scriptPath, '--port', '8000', '--host', '127.0.0.1'];
+    cwd = path.join(__dirname, '../..');
+  } else {
+    // Production mode: use bundled backend executable
+    pythonPath = path.join(process.resourcesPath, 'backend', 'backend.exe');
+    pythonArgs = ['--port', '8000', '--host', '127.0.0.1'];
+    cwd = appRoot; // Set working directory to where models/ and database/ are
+  }
 
-  console.log('Starting Python:', pythonPath, args);
+  console.log('Starting Python backend...');
+  console.log('  Path:', pythonPath);
+  console.log('  Args:', pythonArgs);
+  console.log('  CWD:', cwd);
+  console.log('  App root:', appRoot);
 
-  pythonProcess = spawn(pythonPath, args, { stdio: 'inherit' });
+  // Verify backend exists in production
+  if (!isDev && !fs.existsSync(pythonPath)) {
+    console.error('Backend executable not found at:', pythonPath);
+    console.error('Make sure backend.exe is in resources/backend/');
+  }
+
+  pythonProcess = spawn(pythonPath, pythonArgs, { 
+    stdio: 'inherit',
+    cwd: cwd,
+    env: {
+      ...process.env,
+      PYTHONUNBUFFERED: '1'
+    }
+  });
 
   pythonProcess.on('error', (err) => {
-    console.error('Python error:', err);
+    console.error('Python process error:', err);
+  });
+
+  pythonProcess.on('exit', (code, signal) => {
+    console.log(`Python process exited with code ${code} and signal ${signal}`);
   });
 }
 

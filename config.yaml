@@ -1,10 +1,10 @@
 paths:
-  data_root: '/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA-Desktop/data'
-  raw_html: '/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA-Desktop/data/raw'
-  processed_json: '/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA-Desktop/data/processed'
-  media: '/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA-Desktop/data/media'
-  models: '/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA-Desktop/models'
-  database: '/Users/vishalchaudhary/Documents/Projects/HTML/ErrorCodeQA-Desktop/database'
+  data_root: 'data'
+  raw_html: 'data/raw'
+  processed_json: 'data/processed'
+  media: 'data/media'
+  models: 'models'
+  database: 'database'
 
 models:
   embedding_model: 'nomic-ai/nomic-embed-text-v1.5'
