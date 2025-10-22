@@ -63,10 +63,7 @@
     "extraResources": [
       {
         "from": "../backend/dist/backend",
-        "to": "backend",
-        "filter": [
-          "**/*"
-        ]
+        "to": "backend"
       }
     ],
     "win": {
