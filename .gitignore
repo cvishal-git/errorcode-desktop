@@ -67,3 +67,4 @@ logs/
 *.log
 *.tmp
 *.temp
+dist-electron/
