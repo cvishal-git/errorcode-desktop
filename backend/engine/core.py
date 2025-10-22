@@ -221,7 +221,14 @@ def init_engine(preset_name: str = "balanced") -> str:
     """Initialize the QueryEngine (optional - only for RAG queries)."""
     try:
         if not STATE.project_root:
-            STATE.project_root = Path(__file__).resolve().parents[2]
+            # Detect if running from PyInstaller bundle
+            import sys
+            if getattr(sys, 'frozen', False):
+                # Running as bundled exe - use current working directory
+                STATE.project_root = Path.cwd()
+            else:
+                # Running as script - go up 2 levels from this file
+                STATE.project_root = Path(__file__).resolve().parents[2]
 
         logger.info(f"Initializing QueryEngine with preset: {preset_name}")
 

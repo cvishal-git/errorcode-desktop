@@ -17,9 +17,16 @@ async def lifespan(app: FastAPI):
     '''Startup: Initialize engine'''
     print('🚀 Starting ErrorCodeQA backend...')
 
-    # Set project root (3 levels up from api/main.py)
-    project_root = Path(__file__).parent.parent.parent
+    # Set project root - detect if running from PyInstaller bundle
+    if getattr(sys, 'frozen', False):
+        # Running as bundled exe - use current working directory
+        project_root = Path.cwd()
+    else:
+        # Running as script - 2 levels up from api/main.py
+        project_root = Path(__file__).parent.parent.parent
+    
     STATE.project_root = project_root
+    print(f'📂 Project root: {project_root}')
     
     # Mount media files for serving images
     media_path = project_root / 'data' / 'media'

@@ -37,7 +37,9 @@ function startPython() {
     cwd = path.join(__dirname, '../..');
   } else {
     // Production mode: use bundled backend executable
-    pythonPath = path.join(process.resourcesPath, 'backend', 'backend.exe');
+    const backendName =
+      process.platform === 'win32' ? 'backend.exe' : 'backend';
+    pythonPath = path.join(process.resourcesPath, 'backend', backendName);
     pythonArgs = ['--port', '8000', '--host', '127.0.0.1'];
     cwd = appRoot; // Set working directory to where models/ and database/ are
   }
@@ -93,7 +95,10 @@ function createWindow() {
     // Comment out dev tools for cleaner look
     // mainWindow.webContents.openDevTools();
   } else {
-    mainWindow.loadFile(path.join(__dirname, '../dist/index.html'));
+    // In production, files are in app.asar or unpacked
+    const indexPath = path.join(__dirname, 'dist', 'index.html');
+    console.log('Loading index from:', indexPath);
+    mainWindow.loadFile(indexPath);
   }
 }
 
