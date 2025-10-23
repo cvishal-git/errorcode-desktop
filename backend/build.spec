@@ -22,7 +22,12 @@ hidden_imports = [
     # FastAPI and web framework
     'uvicorn',
     'fastapi',
+    'fastapi.middleware',
+    'fastapi.middleware.cors',
+    'fastapi.staticfiles',
     'starlette',
+    'starlette.middleware',
+    'starlette.middleware.cors',
     'pydantic',
     'multipart',
     
@@ -36,9 +41,20 @@ hidden_imports = [
     # ChromaDB dependencies
     'chromadb.config',
     'chromadb.api',
+    'chromadb.api.segment',
+    'chromadb.api.models',
+    'chromadb.api.types',
     'chromadb.db',
+    'chromadb.db.impl',
+    'chromadb.db.impl.sqlite',
+    'chromadb.telemetry',
+    'chromadb.telemetry.product',
+    'chromadb.telemetry.product.posthog',
+    'chromadb.utils',
+    'chromadb.utils.embedding_functions',
     'onnxruntime',
     'posthog',
+    'overrides',
     
     # Sentence transformers
     'tokenizers',
@@ -97,7 +113,7 @@ exe = EXE(
     bootloader_ignore_signals=False,
     strip=False,
     upx=True,
-    console=True,  # Show console for debugging; set False for production
+    console=False,  # Hide console window in production
     disable_windowed_traceback=False,
     argv_emulation=False,
     target_arch=None,

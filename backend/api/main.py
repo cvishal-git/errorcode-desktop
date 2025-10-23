@@ -15,7 +15,7 @@ from api.routes import router
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     '''Startup: Initialize engine'''
-    print('🚀 Starting ErrorCodeQA backend...')
+    print('Starting ErrorCodeQA backend...')
 
     # Set project root - detect if running from PyInstaller bundle
     if getattr(sys, 'frozen', False):
@@ -26,13 +26,13 @@ async def lifespan(app: FastAPI):
         project_root = Path(__file__).parent.parent.parent
     
     STATE.project_root = project_root
-    print(f'📂 Project root: {project_root}')
+    print(f'Project root: {project_root}')
     
     # Mount media files for serving images
     media_path = project_root / 'data' / 'media'
     if media_path.exists():
         app.mount('/media', StaticFiles(directory=str(media_path)), name='media')
-        print(f'📁 Serving media from: {media_path}')
+        print(f'Serving media from: {media_path}')
 
     # Initialize engine with balanced preset
     status = init_engine('balanced')
@@ -40,7 +40,7 @@ async def lifespan(app: FastAPI):
 
     yield
 
-    print('🛑 Shutting down...')
+    print('Shutting down...')
 
 app = FastAPI(
     title='ErrorCodeQA API',

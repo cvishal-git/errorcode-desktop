@@ -26,21 +26,32 @@ function startPython() {
 
   if (isDev) {
     // Development mode: use virtual environment Python
-    const venvPython = path.join(__dirname, '../../backend/venv/bin/python');
-    pythonPath = fs.existsSync(venvPython)
-      ? venvPython
-      : process.platform === 'win32'
-      ? 'python'
-      : 'python3';
+    const venvPythonWin = path.join(
+      __dirname,
+      '../../backend/venv/Scripts/python.exe',
+    );
+    const venvPythonUnix = path.join(
+      __dirname,
+      '../../backend/venv/bin/python',
+    );
+
+    if (process.platform === 'win32' && fs.existsSync(venvPythonWin)) {
+      pythonPath = venvPythonWin;
+    } else if (fs.existsSync(venvPythonUnix)) {
+      pythonPath = venvPythonUnix;
+    } else {
+      pythonPath = process.platform === 'win32' ? 'python' : 'python3';
+    }
+
     const scriptPath = path.join(__dirname, '../../backend/server.py');
-    pythonArgs = [scriptPath, '--port', '8000', '--host', '127.0.0.1'];
+    pythonArgs = [scriptPath, '--port', '48127', '--host', '127.0.0.1'];
     cwd = path.join(__dirname, '../..');
   } else {
     // Production mode: use bundled backend executable
     const backendName =
       process.platform === 'win32' ? 'backend.exe' : 'backend';
     pythonPath = path.join(process.resourcesPath, 'backend', backendName);
-    pythonArgs = ['--port', '8000', '--host', '127.0.0.1'];
+    pythonArgs = ['--port', '48127', '--host', '127.0.0.1'];
     cwd = appRoot; // Set working directory to where models/ and database/ are
   }
 
@@ -74,7 +85,7 @@ function startPython() {
   });
 }
 
-function createWindow() {
+async function createWindow() {
   mainWindow = new BrowserWindow({
     width: 450,
     height: 700,
@@ -106,7 +117,25 @@ function createWindow() {
   );
 
   if (isDev) {
-    mainWindow.loadURL('http://localhost:5173');
+    // Try multiple ports in case 5173 is taken
+    const tryPorts = [5173, 5174, 5175];
+    let loaded = false;
+
+    for (const port of tryPorts) {
+      try {
+        await mainWindow.loadURL(`http://localhost:${port}`);
+        console.log(`✓ Loaded from port ${port}`);
+        loaded = true;
+        break;
+      } catch (err) {
+        console.log(`Port ${port} not available, trying next...`);
+      }
+    }
+
+    if (!loaded) {
+      console.error('Failed to connect to Vite dev server');
+    }
+
     mainWindow.webContents.openDevTools(); // Enable for debugging
   } else {
     // In production, electron-builder packages files relative to app.getAppPath()
@@ -130,9 +159,6 @@ function createWindow() {
         // Fallback: try to load from URL if file loading fails
         mainWindow.loadURL(`file://${indexPath}`);
       });
-
-    // Open dev tools in production for debugging
-    mainWindow.webContents.openDevTools();
   }
 }
 

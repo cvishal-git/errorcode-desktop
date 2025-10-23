@@ -144,21 +144,21 @@ def check_and_download_models(project_root: Path, cfg: Dict[str, Any]) -> Tuple[
     embed_dir_name = cfg["models"]["embedding_dir"]
     embed_dir = models_root / embed_dir_name
     if not embed_dir.exists():
-        messages.append(f"⚠️ Missing embedding model at {embed_dir}")
+        messages.append(f"WARNING: Missing embedding model at {embed_dir}")
         messages.append("Run: python src/download_models.py")
         return False, "; ".join(messages)
     else:
-        messages.append(f"✅ Embedding model: {embed_dir.name}")
+        messages.append(f"OK: Embedding model: {embed_dir.name}")
 
     # Check LLM model
     llm_dir_name = cfg["models"]["llm_dir"]
     gguf = models_root / llm_dir_name / cfg["models"]["llm_gguf_filename"]
     if not gguf.exists():
-        messages.append(f"⚠️ Missing LLM model at {gguf}")
+        messages.append(f"WARNING: Missing LLM model at {gguf}")
         messages.append("Run: python src/download_models.py")
         return False, "; ".join(messages)
     else:
-        messages.append(f"✅ LLM model: {gguf.name}")
+        messages.append(f"OK: LLM model: {gguf.name}")
 
     return True, "; ".join(messages)
 
@@ -183,15 +183,15 @@ def startup_checks(project_root: Path) -> Tuple[bool, str, Dict[str, Any]]:
 
     # Check database (optional for basic functionality)
     if not db_root.exists():
-        messages.append(f"⚠️ Missing ChromaDB at {db_root} (RAG will be unavailable)")
+        messages.append(f"WARNING: Missing ChromaDB at {db_root} (RAG will be unavailable)")
         # Don't set ok = False - we can still work with cached error codes
     else:
-        messages.append(f"✅ Database: {db_root.name}")
+        messages.append(f"OK: Database: {db_root.name}")
 
     # Check media index
     media_index = processed_root / "media_index.json"
     if media_index.exists():
-        messages.append(f"✅ Media index: {media_index.name}")
+        messages.append(f"OK: Media index: {media_index.name}")
 
     # Build model info
     embed_dir_name = cfg["models"]["embedding_dir"]
@@ -242,7 +242,7 @@ def init_engine(preset_name: str = "balanced") -> str:
                 STATE.status = f"Startup checks failed: {status}"
                 logger.warning(STATE.status)
                 # Don't fail completely - we can still work with cached error codes
-                return f"⚠️ Limited mode - RAG unavailable: {status}"
+                return f"WARNING: Limited mode - RAG unavailable: {status}"
 
         # Try to create engine with specified preset (optional)
         try:
@@ -250,17 +250,19 @@ def init_engine(preset_name: str = "balanced") -> str:
             STATE.status = "Ready"
             STATE.current_preset = preset_name
             logger.info(f"QueryEngine ready with {preset_name} preset")
-            return f"✅ System Ready ({preset_name})"
+            return f"OK: System Ready ({preset_name})"
         except Exception as e:
-            logger.warning(f"QueryEngine initialization failed: {e}")
+            import traceback
+            logger.error(f"QueryEngine initialization failed: {e}")
+            logger.error(f"Traceback: {traceback.format_exc()}")
             STATE.status = "Limited mode - cached responses only"
             STATE.current_preset = preset_name
-            return f"⚠️ Limited mode - cached responses only: {e}"
+            return f"WARNING: Limited mode - cached responses only: {e}"
 
     except Exception as e:
         STATE.status = f"Engine init error: {e}"
         logger.exception("Engine initialization failed")
-        return f"❌ Initialization Error: {e}"
+        return f"ERROR: Initialization Error: {e}"
 
 
 def switch_preset(preset_name: str) -> str:
@@ -355,9 +357,9 @@ def format_template_response(error_code: str, error_data: Dict[str, Any], query:
     media = error_data.get('media', [])
     if media:
         if len(media) == 1:
-            parts.append(f"\n**📸 Visual Guide:**")
+            parts.append(f"\n** Visual Guide:**")
         else:
-            parts.append(f"\n**📸 Visual Guides ({len(media)} diagrams):**")
+            parts.append(f"\n** Visual Guides ({len(media)} diagrams):**")
 
         # Collect and de-duplicate captions
         seen_captions = set()
@@ -377,7 +379,7 @@ def format_template_response(error_code: str, error_data: Dict[str, Any], query:
     # Notes with natural intro
     notes = error_data.get('notes', '').strip()
     if notes:
-        parts.append(f"\n**💡 Important Note:**")
+        parts.append(f"\n** Important Note:**")
         parts.append(notes)
 
     # No footer here - it will be added by the caller
@@ -429,10 +431,10 @@ def process_query(user_question: str, preset_name: str = "balanced") -> Tuple[st
     if not use_hybrid and STATE.current_preset != preset_name:
         switch_status = switch_preset(preset_name)
         if "Error" in switch_status or "failed" in switch_status:
-            return (f"❌ {switch_status}", [])
+            return (f"ERROR: {switch_status}", [])
 
     if not STATE.engine and not use_hybrid:
-        return ("❌ Engine not initialized. Please restart.", [])
+        return ("ERROR: Engine not initialized. Please restart.", [])
 
     try:
         # Extract error codes from query
@@ -468,7 +470,7 @@ def process_query(user_question: str, preset_name: str = "balanced") -> Tuple[st
                 combined_answer += "\n\n---\n⚡ *Instant response for multiple error codes*"
                 return (combined_answer, all_media)
             else:
-                return (f"❌ Error codes {', '.join(error_codes)} not found in database.", [])
+                return (f"ERROR: Error codes {', '.join(error_codes)} not found in database.", [])
         
         # Single error code handling
         error_code = error_codes[0] if error_codes else None
@@ -585,7 +587,34 @@ ANSWER:"""
                 resp = STATE.engine.query(user_question)
                 answer = resp.get("answer", "No answer generated.")
             else:
-                answer = "RAG system unavailable. Please ask about specific error codes (e.g., BMCR01, BMMJ05) for instant responses."
+                # Fallback: Search through cached error codes for keyword matches
+                logger.info(f"RAG unavailable, searching cache for: {user_question}")
+                query_lower = user_question.lower()
+                matches = []
+                
+                for code, data in STATE.error_code_cache.items():
+                    # Search in alarm message, reasons_remedies, and description
+                    searchable_text = f"{data.get('alarm_message', '')} {' '.join(data.get('reasons_remedies', []))} {data.get('description', '')}".lower()
+                    
+                    # Check if query keywords are in the error code data
+                    query_words = [w for w in query_lower.split() if len(w) > 3]  # Skip short words
+                    if any(word in searchable_text for word in query_words):
+                        matches.append((code, data))
+                
+                if matches:
+                    # Use the first match
+                    error_code, error_data = matches[0]
+                    alarm = error_data.get('alarm_message', '')
+                    reasons = error_data.get('reasons_remedies', [])
+                    
+                    answer = f"## {error_code}: {alarm}\n\n"
+                    answer += "**Common causes and how to fix them:**\n\n"
+                    for i, reason in enumerate(reasons, 1):
+                        answer += f"{i}. {reason}\n"
+                    
+                    logger.info(f"Found match in cache: {error_code}")
+                else:
+                    answer = "I couldn't find specific information about that. Please ask about specific error codes (e.g., BMCR01, BMMJ05) for instant responses."
 
         # Format media gallery
         media_items = []
@@ -606,8 +635,18 @@ ANSWER:"""
                     # Already absolute
                     abs_path = Path(path)
                 else:
-                    # Try organized path from media index first
-                    if error_code and error_code in STATE.error_code_cache:
+                    # Convert old HTML paths to new organized structure
+                    # Old: HTML/Help_Images_BMAX/filename.ext
+                    # New: data/media/CATEGORY/CODE/filename.ext
+                    if path.startswith('HTML/Help_Images_BMAX/') and error_code:
+                        filename = path.split('/')[-1]
+                        category = error_code[:4] if error_code else ""  # e.g., BMCR from BMCR01
+                        new_path = f"data/media/{category}/{error_code}/{filename}"
+                        abs_path = STATE.project_root / new_path
+                        logger.info(f"Converted old path {path} to {new_path}")
+                    
+                    # Try organized path from media index
+                    if (not abs_path or not abs_path.exists()) and error_code and error_code in STATE.error_code_cache:
                         media_index_path = STATE.project_root / "data" / "processed" / "media_index.json"
                         if media_index_path.exists():
                             try:
@@ -617,27 +656,29 @@ ANSWER:"""
                                     if error_code in media_idx:
                                         for m in media_idx[error_code]:
                                             if m.get("original_path", "") == path or m.get("path", "") == path:
-                                                org_path = m.get("organized_path", "")
-                                                if org_path:
-                                                    abs_path = STATE.project_root / org_path
-                                                    if abs_path.exists():
-                                                        break
-                            except:
-                                pass
+                                                # Extract just the filename and construct new path
+                                                filename = path.split('/')[-1]
+                                                category = error_code[:4] if error_code else ""
+                                                new_path = f"data/media/{category}/{error_code}/{filename}"
+                                                abs_path = STATE.project_root / new_path
+                                                if abs_path.exists():
+                                                    break
+                            except Exception as e:
+                                logger.warning(f"Error reading media index: {e}")
 
                     # Try path relative to project root (ErrorCodeQA/)
                     if not abs_path or not abs_path.exists():
                         abs_path = STATE.project_root / path
 
                     # Try path relative to parent directory (one level up)
-                    if not abs_path.exists():
+                    if not abs_path or not abs_path.exists():
                         abs_path = STATE.project_root.parent / path
 
                 if abs_path and abs_path.exists():
                     caption = item.get("caption", "")
                     gallery.append((str(abs_path), caption))
                 else:
-                    logger.warning(f"Media file not found: {path}")
+                    logger.warning(f"Media file not found: {path} (tried {abs_path})")
 
         # Log image loading (no footer needed for hybrid template mode)
         if gallery:
@@ -649,7 +690,7 @@ ANSWER:"""
 
     except Exception as e:
         logger.exception("Query processing failed")
-        error_msg = f"❌ **Error Processing Query**\n\n{str(e)}\n\nPlease try rephrasing your question."
+        error_msg = f"ERROR: **Error Processing Query**\n\n{str(e)}\n\nPlease try rephrasing your question."
         return (error_msg, [])
 
 
@@ -666,12 +707,15 @@ def handle_chat_query(query: str, preset: str = "balanced") -> Tuple[str, List[D
     for path, caption in gallery:
         # Convert file system path to URL path
         # Path format: /full/path/to/data/media/CATEGORY/FILE.ext
-        # Convert to: http://127.0.0.1:8000/media/CATEGORY/FILE.ext
+        # Convert to: http://127.0.0.1:48127/media/CATEGORY/FILE.ext
         
-        if '/data/media/' in path:
+        # Normalize path separators for cross-platform compatibility
+        normalized_path = path.replace('\\', '/')
+        
+        if '/data/media/' in normalized_path:
             # Extract relative path after 'data/media/'
-            relative_path = path.split('/data/media/')[-1]
-            url_path = f'http://127.0.0.1:8000/media/{relative_path}'
+            relative_path = normalized_path.split('/data/media/')[-1]
+            url_path = f'http://127.0.0.1:48127/media/{relative_path}'
         else:
             # Fallback to original path
             url_path = path

@@ -64,6 +64,18 @@
       {
         "from": "../backend/dist/backend",
         "to": "backend"
+      },
+      {
+        "from": "../config.yaml",
+        "to": "../config.yaml"
+      },
+      {
+        "from": "../data",
+        "to": "../data",
+        "filter": [
+          "**/*",
+          "!**/raw/**"
+        ]
       }
     ],
     "win": {
@@ -75,7 +87,8 @@
           ]
         }
       ],
-      "artifactName": "${productName}-${version}-Setup.${ext}"
+      "artifactName": "${productName}-${version}-Setup.${ext}",
+      "signAndEditExecutable": false
     },
     "nsis": {
       "oneClick": false,

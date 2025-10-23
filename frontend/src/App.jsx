@@ -9,15 +9,28 @@ function App() {
   const [status, setStatus] = useState('connecting');
 
   useEffect(() => {
+    let retries = 0;
+    const maxRetries = 20;
+
     const checkBackend = async () => {
       try {
-        await healthCheck();
-        setStatus('connected');
+        const health = await healthCheck();
+        if (health.status === 'ready' || health.status === 'not_ready') {
+          setStatus('connected');
+        } else {
+          throw new Error('Backend not ready');
+        }
       } catch (error) {
-        console.error('Backend error:', error);
-        setStatus('error');
+        retries++;
+        if (retries < maxRetries) {
+          setTimeout(checkBackend, 1000);
+        } else {
+          console.error('Backend error:', error);
+          setStatus('error');
+        }
       }
     };
+
     checkBackend();
   }, []);
 
@@ -47,6 +60,82 @@ function App() {
       setIsLoading(false);
     }
   };
+
+  if (status === 'connecting') {
+    return (
+      <div
+        style={{
+          height: '100vh',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          background: '#1a1d29',
+        }}
+      >
+        <div
+          style={{
+            width: '80px',
+            height: '80px',
+            background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+            borderRadius: '20px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            marginBottom: '20px',
+            fontSize: '36px',
+            animation: 'pulse 2s ease-in-out infinite',
+          }}
+        >
+          💬
+        </div>
+        <h2
+          style={{
+            fontSize: '24px',
+            fontWeight: '600',
+            marginBottom: '8px',
+            color: '#e5e7eb',
+          }}
+        >
+          Starting ErrorCode Assistant
+        </h2>
+        <p style={{ fontSize: '14px', color: '#9ca3af' }}>
+          Initializing AI models...
+        </p>
+        <div style={{ display: 'flex', gap: '8px', marginTop: '20px' }}>
+          <div
+            style={{
+              width: '10px',
+              height: '10px',
+              borderRadius: '50%',
+              background: '#667eea',
+              animation: 'bounce 1.4s infinite ease-in-out both',
+              animationDelay: '-0.32s',
+            }}
+          />
+          <div
+            style={{
+              width: '10px',
+              height: '10px',
+              borderRadius: '50%',
+              background: '#667eea',
+              animation: 'bounce 1.4s infinite ease-in-out both',
+              animationDelay: '-0.16s',
+            }}
+          />
+          <div
+            style={{
+              width: '10px',
+              height: '10px',
+              borderRadius: '50%',
+              background: '#667eea',
+              animation: 'bounce 1.4s infinite ease-in-out both',
+            }}
+          />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div
@@ -105,17 +194,17 @@ function App() {
               background:
                 status === 'connected'
                   ? '#10b981'
-                  : status === 'connecting'
-                  ? '#f59e0b'
-                  : '#ef4444',
+                  : status === 'error'
+                  ? '#ef4444'
+                  : '#f59e0b',
             }}
           ></span>
           <span style={{ color: 'rgba(255,255,255,0.9)', fontSize: '12px' }}>
             {status === 'connected'
               ? 'Online'
-              : status === 'connecting'
-              ? 'Connecting...'
-              : 'Offline'}
+              : status === 'error'
+              ? 'Offline'
+              : 'Connecting...'}
           </span>
         </div>
       </div>

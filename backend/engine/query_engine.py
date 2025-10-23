@@ -84,17 +84,28 @@ class QueryEngine:
         - Loads Qwen 2.5-3B using llama-cpp (GGUF file path from config)
         """
         t0 = time.time()
-        self.project_root = project_root or Path(__file__).resolve().parents[1]
+        if project_root:
+            self.project_root = project_root
+        elif getattr(sys, 'frozen', False):
+            self.project_root = Path.cwd()
+        else:
+            self.project_root = Path(__file__).resolve().parents[2]
         self.cfg = self._load_config(self.project_root)
         self.preset_name = preset_name
         
         # Apply preset configuration
         self._apply_preset()
 
-        # Paths
-        self.models_root = Path(self.cfg["paths"]["models"])  # absolute
-        self.db_root = Path(self.cfg["paths"]["database"]) / "chromadb"
-        self.processed_root = Path(self.cfg["paths"]["processed_json"])  # data/processed
+        # Paths - resolve relative to project_root
+        models_path = Path(self.cfg["paths"]["models"])
+        self.models_root = models_path if models_path.is_absolute() else self.project_root / models_path
+        
+        db_path = Path(self.cfg["paths"]["database"])
+        db_path = db_path if db_path.is_absolute() else self.project_root / db_path
+        self.db_root = db_path / "chromadb"
+        
+        processed_path = Path(self.cfg["paths"]["processed_json"])
+        self.processed_root = processed_path if processed_path.is_absolute() else self.project_root / processed_path
 
         # Embedding model
         embed_dir_name = self.cfg["models"]["embedding_dir"]
@@ -106,7 +117,12 @@ class QueryEngine:
 
         # ChromaDB
         logger.info("Connecting to ChromaDB...")
-        self.chroma = chromadb.PersistentClient(path=str(self.db_root), settings=Settings(anonymized_telemetry=False))
+        chroma_settings = Settings(
+            anonymized_telemetry=False,
+            allow_reset=True,
+            is_persistent=True
+        )
+        self.chroma = chromadb.PersistentClient(path=str(self.db_root), settings=chroma_settings)
         self.collection = self.chroma.get_or_create_collection(name="error_codes", metadata={"hnsw:space": "cosine"})
 
         # Media index
